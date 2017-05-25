@@ -6,7 +6,11 @@ class SonarApp extends Component {
   render() {
     const data = guideData.map( (section) => {
       return {
-        data: section.artists,
+        data: section.artists.map( (artist) => ({
+          key: artist.name,
+            style: artist.style,
+            description: artist.description
+        }) ),
         key: `${section.day} ${section.venue}`
       };
     } );
@@ -14,7 +18,7 @@ class SonarApp extends Component {
       <SectionList
         renderItem={({item}) =>
             <View style={{paddingBottom: 10, paddingLeft: 10}}>
-              <Text style={{fontWeight: "bold"}}>{item.name}</Text>
+              <Text style={{fontWeight: "bold"}}>{item.key}</Text>
               <Text>{item.style}</Text>
               <Text>{item.description}</Text>
             </View>
