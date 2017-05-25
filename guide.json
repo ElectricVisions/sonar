@@ -1,7 +1,7 @@
 [
   {
-    "day": "thursday",
-    "venue": "day",
+    "day": "Thursday",
+    "venue": "Day",
     "artists": [
       {"name": "Andy Stott", "style": "Dark House/Slow", "description": "Could be anything, worth a look?"},
       {"name": "Arca", "style": "Latin Futuristic Electro", "description": "like it"},
@@ -36,10 +36,10 @@
     ]
   },
   {
-    "day": "friday",
-    "venue": "day",
+    "day": "Friday",
+    "venue": "Day",
     "artists": [
-      {"name": "Aitor Etxebarria", "style": "Instrumental Documentary - Documentary of the 1937 Spanish bombing", "description": "Beautiful"},
+      {"name": "Aitor Etxebarria", "style": "Instrumental Documentary", "description": "Documentary of the 1937 Spanish bombing. Beautiful"},
       {"name": "Bad Gyal", "style": "R&B", "description": "Poppy autotunetastic"},
       {"name": "Clark", "style": "Moody Basy IDM", "description": "We need to see this"},
       {"name": "Damian Lazarus", "style": "Dance/Electro", "description": "Good but needs to step it up to close at Sonar Day"},
@@ -74,8 +74,8 @@
     ]
   },
   {
-    "day": "friday",
-    "venue": "night",
+    "day": "Friday",
+    "venue": "Night",
     "artists": [
       {"name": "AJ Tracy", "style": "Grime", "description": "not my thing"},
       {"name": "Anderson .Paak", "style": "Soul/Funk/Rap", "description": "Not original enough for me but I'm no expert in this area"},
@@ -92,8 +92,8 @@
     ]
   },
   {
-    "day": "saturday",
-    "venue": "day",
+    "day": "Saturday",
+    "venue": "Day",
     "artists": [
       {"name": "Aethereal Arthropod", "style": "Noise", "description": "Even I am having trouble classifying this as music but I might check it out to be sure"},
       {"name": "Amnesia Scanner", "style": "Electro Base", "description": "Closer to music than the guy above. Do not miss!"},
@@ -129,8 +129,8 @@
     ]
   },
   {
-    "day": "saturday",
-    "venue": "night",
+    "day": "Saturday",
+    "venue": "Night",
     "artists": [
       {"name": "Avalon Emerson & Courtesy", "style": "Cosmic to Moody Techno", "description": "You won't be disappointed"},
       {"name": "Beautiful Swimmers", "style": "Experimental Techno", "description": "Apt for Lab but not as out there as some"},
