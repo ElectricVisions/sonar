@@ -1,5 +1,5 @@
 {
-  [
+  "lineups": [
     {
       "day": "thursday",
       "venue": "day",
@@ -33,7 +33,7 @@
         {"name": "Toxe", "style": "Some heavy stuff", "description": "Could be just the ticket"},
         {"name": "Tutu", "style": "Abstract/Dance/Techno", "description": "Great first artist"},
         {"name": "Yung Beef", "style": "R&B?", "description": "Someone take that autotune off him"},
-        {"name": "Yves Tumor", "style": "Worldy and strange", "description": "okay if you need to slow down"},
+        {"name": "Yves Tumor", "style": "Worldy and strange", "description": "okay if you need to slow down"}
       ]
     },
     {
@@ -70,7 +70,7 @@
         {"name": "Sofie Winterson", "style": "Electropop", "description": "More plinky plonky. Nice voice though"},
         {"name": "Stööki Sound", "style": "Grime/HH/Trap", "description": "It has it's moments"},
         {"name": "Sturia Atlas", "style": "R&B", "description": "Get me outta here"},
-        {"name": "Suzanne Ciani", "style": "Classical/Synth", "description": "Difficult to say. Her albums sound pretty traditional"},
+        {"name": "Suzanne Ciani", "style": "Classical/Synth", "description": "Difficult to say. Her albums sound pretty traditional"}
 
       ]
     },
@@ -89,7 +89,7 @@
         {"name": "Nicolas Jaar", "style": "Ambient/Blues/Noise/House/Jazz", "description": "Slow build"},
         {"name": "Nina Kraviz", "style": "Techno", "description": "Ambient with Dark beats. Pretty banging!"},
         {"name": "Sandro Jeeawock", "style": "Hip Hop", "description": "HH With odd harmonies, typical Lab content"},
-        {"name": "Soulwax", "style": "Synthpop/Funk", "description": "Intelligent retro plinky plonky but maybe should have stayed at home"},
+        {"name": "Soulwax", "style": "Synthpop/Funk", "description": "Intelligent retro plinky plonky but maybe should have stayed at home"}
       ]
     },
     {
@@ -126,7 +126,7 @@
         {"name": "Total Freedom", "style": "Heavy Dance", "description": "Might take some time to get going but could be good"},
         {"name": "Valgeir Sigurdsson", "style": "Glitchy folk", "description": "Doesn't really go anywhere"},
         {"name": "Veronica Vasicka", "style": "Minimal Wave", "description": "I'm in a computer game!"},
-        {"name": "Zutzut & Imaabs", "style": "Latin Electro Bass", "description": "Tough one to call as material is non-existent"},
+        {"name": "Zutzut & Imaabs", "style": "Latin Electro Bass", "description": "Tough one to call as material is non-existent"}
       ]
     },
     {
@@ -154,8 +154,8 @@
         {"name": "t q d", "style": "Garage/Bass", "description": "Might be interesting what they do at Lab"},
         {"name": "The Black Madonna", "style": "Dance", "description": "Saw last year at Day. Absolutely banging!"},
         {"name": "Vitalic", "style": "Disco Techno", "description": "Might just the ticket at 4am"},
-        {"name": "Ylia", "style": "Electro", "description": "Nice, rich sounds. Too early for some though"},
+        {"name": "Ylia", "style": "Electro", "description": "Nice, rich sounds. Too early for some though"}
       ]
-    },
+    }
   ]
 }
