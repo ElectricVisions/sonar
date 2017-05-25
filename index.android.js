@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
-import { AppRegistry, Text, View, ListView } from 'react-native';
+import { AppRegistry, Text, View, FlatList } from 'react-native';
+import guideData from './guide.json';
 
 class SonarApp extends Component {
-  constructor() {
-    super();
-    const source = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-    this.state = {
-      dataSource: source.cloneWithRows(['row 1', 'row 2']),
-    };
-  }
-
   render() {
+    const data = guideData.map( (section) => {
+      return section.artists
+    } ).reduce( (total, current) => total.concat(current), []
+    ).map( (artist) => ({key: artist.name}) )
     return (
-      <ListView
-        dataSource={this.state.dataSource}
-        renderRow={(rowData) => <Text>{rowData}</Text>}
+      <FlatList
+        data={data}
+        renderItem={({item}) => <Text>{item.key}</Text>}
       />
     );
   }
