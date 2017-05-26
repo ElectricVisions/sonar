@@ -3,6 +3,8 @@ import { View, Text } from 'react-native';
 
 export class ArtistView extends Component {
   render() {
+    const artist = this.props.artist;
+
     return (
       <View style={{
         padding: 5,
@@ -14,12 +16,12 @@ export class ArtistView extends Component {
           fontSize: 18,
           fontWeight: 'bold'
         }}>
-          {this.props.name}
-          <Text style={{color: 'grey', fontSize: 16}}> {this.props.from}</Text>
+          {artist.name}
+          <Text style={{color: 'grey', fontSize: 16}}> {artist.from}</Text>
         </Text>
-        <Text style={{fontWeight: 'bold'}}>{this.props.type.toUpperCase()} {this.props.genre}</Text>
-        <Text>{this.props.time} {this.props.location}</Text>
-        <Text style={{color: 'black'}}>{this.props.comment}</Text>
+        <Text style={{fontWeight: 'bold'}}>{artist.type.toUpperCase()} {artist.genre}</Text>
+        <Text>{artist.time} {artist.location}</Text>
+        <Text style={{color: 'black'}}>{artist.comment}</Text>
       </View>
     )
   }

@@ -26,16 +26,7 @@ class SonarApp extends Component {
       <SectionList
         style={{backgroundColor: 'rgb(233, 211, 218)'}}
         renderItem={({item}) =>
-            <ArtistView
-              key={item.key}
-              name={item.name}
-              genre={item.genre}
-              comment={item.comment}
-              location={item.location}
-              type={item.type}
-              from={item.from}
-              time={item.time}
-              />
+            <ArtistView artist={item}/>
         }
         renderSectionHeader={({section}) =>
             <HeaderView title={section.key}/>
