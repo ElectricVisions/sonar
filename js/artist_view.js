@@ -13,12 +13,13 @@ export class ArtistView extends Component {
           color: 'black',
           fontSize: 18,
           fontWeight: 'bold'
-        }}>{this.props.name}</Text>
-        <Text style={{fontWeight: 'bold'}}>{this.props.genre}</Text>
+        }}>
+          {this.props.name}
+          <Text style={{color: 'grey', fontSize: 16}}> {this.props.from}</Text>
+        </Text>
+        <Text style={{fontWeight: 'bold'}}>{this.props.type.toUpperCase()} {this.props.genre}</Text>
+        <Text>{this.props.time} {this.props.location}</Text>
         <Text style={{color: 'black'}}>{this.props.comment}</Text>
-        <Text>{this.props.location}</Text>
-        <Text>{this.props.type}</Text>
-        <Text>{this.props.from}</Text>
       </View>
     )
   }
