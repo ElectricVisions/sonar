@@ -1,20 +1,34 @@
 import React, { Component } from 'react';
-import { AppRegistry, Text, View, ListView } from 'react-native';
+import { AppRegistry, View, Text, SectionList } from 'react-native';
+import guideData from './guide.json';
+import { ArtistView } from './js/artist_view';
+import { HeaderView } from './js/header_view';
 
 class SonarApp extends Component {
-  constructor() {
-    super();
-    const source = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-    this.state = {
-      dataSource: source.cloneWithRows(['row 1', 'row 2']),
-    };
-  }
-
   render() {
+    const data = guideData.map( (section) => {
+      return {
+        data: section.artists.map( (artist) => ({
+          key: artist.name,
+            genre: artist.style,
+            description: artist.description
+        }) ),
+        key: `${section.day} ${section.venue}`
+      };
+    } );
+
     return (
-      <ListView
-        dataSource={this.state.dataSource}
-        renderRow={(rowData) => <Text>{rowData}</Text>}
+      <SectionList
+        style={{backgroundColor: 'rgb(233, 211, 218)'}}
+        renderItem={({item}) =>
+            <ArtistView name={item.key}
+              genre={item.genre}
+              comment={item.description}/>
+        }
+        renderSectionHeader={({section}) =>
+            <HeaderView title={section.key}/>
+        }
+        sections={data}
       />
     );
   }
