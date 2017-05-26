@@ -11,10 +11,10 @@ class SonarApp extends Component {
         data: section.artists.map( (artist) => ({
           key: artist.name,
           genre: artist.style,
-          description: artist.description,
+          comment: artist.description,
           location: artist.location,
           type: artist.type,
-          from: artist.from,
+          from: artist.from
         }) ),
         key: `${section.day} ${section.venue}`
       };
@@ -26,7 +26,11 @@ class SonarApp extends Component {
         renderItem={({item}) =>
             <ArtistView name={item.key}
               genre={item.genre}
-              comment={item.description}/>
+              comment={item.comment}
+              location={item.location}
+              type={item.type}
+              from={item.from}
+              />
         }
         renderSectionHeader={({section}) =>
             <HeaderView title={section.key}/>
