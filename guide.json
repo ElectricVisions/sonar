@@ -39,6 +39,8 @@
       {"time": "19:50", "location": "SonarXS", "type": "Live", "from": "US", "name": "Yves Tumor", "style": "Worldy and strange", "description": "okay if you need to slow down"},
       {"time": "20:35", "location": "SonarXS", "type": "DJ", "from": "UK", "name": "DJ Bus Replacement Service", "style": "Comical", "description": "at least I think it's meant to be"},
     ],
+  },
+  {
     "day": "Friday",
     "venue": "Day",
     "artists": [
