@@ -16,6 +16,9 @@ export class ArtistView extends Component {
         }}>{this.props.name}</Text>
         <Text style={{fontWeight: 'bold'}}>{this.props.genre}</Text>
         <Text style={{color: 'black'}}>{this.props.comment}</Text>
+        <Text>{this.props.location}</Text>
+        <Text>{this.props.type}</Text>
+        <Text>{this.props.from}</Text>
       </View>
     )
   }

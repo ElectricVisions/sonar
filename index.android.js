@@ -10,8 +10,11 @@ class SonarApp extends Component {
       return {
         data: section.artists.map( (artist) => ({
           key: artist.name,
-            genre: artist.style,
-            description: artist.description
+          genre: artist.style,
+          description: artist.description,
+          location: artist.location,
+          type: artist.type,
+          from: artist.from,
         }) ),
         key: `${section.day} ${section.venue}`
       };
