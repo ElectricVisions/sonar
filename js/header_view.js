@@ -5,10 +5,10 @@ export class HeaderView extends Component {
   render() {
     return (
       <Text style={{
-        color: 'black',
-        borderBottomWidth: 1,
-        borderBottomColor: 'black',
-        margin: 10,
+        backgroundColor: 'black',
+        paddingVertical: 5,
+        paddingHorizontal: 10,
+        color: 'white',
         fontWeight: 'bold',
         fontSize: 24}}>
         {this.props.title}
