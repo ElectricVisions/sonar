@@ -38,8 +38,8 @@
       {"time": "17:55", "location": "SonarXS", "type": "DJ", "from": "ES", "name": "BSN Posse", "genre": "Funk/HH/Soul/Dub", "comment": "Something for everyone"},
       {"time": "19:00", "location": "SonarXS", "type": "Live", "from": "ES", "name": "Yung Beef", "genre": "R&B?", "comment": "Someone take that autotune off him"},
       {"time": "19:50", "location": "SonarXS", "type": "Live", "from": "US", "name": "Yves Tumor", "genre": "Worldy and strange", "comment": "okay if you need to slow down"},
-      {"time": "20:35", "location": "SonarXS", "type": "DJ", "from": "UK", "name": "DJ Bus Replacement Service", "genre": "Comical", "comment": "at least I think it's meant to be"},
-    ],
+      {"time": "20:35", "location": "SonarXS", "type": "DJ", "from": "UK", "name": "DJ Bus Replacement Service", "genre": "Comical", "comment": "at least I think it's meant to be"}
+    ]
   },
   {
     "date": 16,
@@ -80,7 +80,7 @@
       {"time": "17:55", "location": "SonarXS", "type": "Live", "from": "IS", "name": "STURLA ATLAS", "genre": "R&B", "comment": "Get me outta here"},
       {"time": "18:35", "location": "SonarXS", "type": "Live", "from": "ES", "name": "BAD GYAL", "genre": "R&B", "comment": "Poppy autotunetastic"},
       {"time": "19:15", "location": "SonarXS", "type": "DJ", "from": "UK", "name": "DJ FLORENTINO", "genre": "Latin", "comment": "Could be good depending on mood"},
-      {"time": "20:20", "location": "SonarXS", "type": "DJ", "from": "FR", "name": "KIDDY SMILE", "genre": "Dance/Disco - Wow retro dance", "comment": "unless I took the wrong thing I'll be elsewhere"},
+      {"time": "20:20", "location": "SonarXS", "type": "DJ", "from": "FR", "name": "KIDDY SMILE", "genre": "Dance/Disco - Wow retro dance", "comment": "unless I took the wrong thing I'll be elsewhere"}
     ]
   },
   {
@@ -113,7 +113,7 @@
       {"time": "04:10", "location": "SonarLab", "type": "Live", "from": "CA", "name": "LUNICE", "genre": "?", "comment": "?"},
       {"time": "05:15", "location": "SonarLab", "type": "DJ", "from": "UK", "name": "BENJI B", "genre": "Grime/House", "comment": "Ah another person who likes his voice through an autotune. Mixes it up with some slow bass but doesn't save it for me"},
 
-      {"time": "00:00", "location": "SonarCar", "type": "Live", "from": "US", "name": "MASTERS AT WORK / 6H SET", "genre": "?", "comment": "?"},
+      {"time": "00:00", "location": "SonarCar", "type": "Live", "from": "US", "name": "MASTERS AT WORK / 6H SET", "genre": "?", "comment": "?"}
     ]
   },
   {
@@ -156,7 +156,7 @@
       {"time": "17:50", "location": "SonarXS", "type": "Live", "from": "ES", "name": "BEJO", "genre": "Rap", "comment": "'Mucho Chicken in the kitchen'. Need I say more."},
       {"time": "18:35", "location": "SonarXS", "type": "DJ", "from": "TN", "name": "DEENA ABDELWAHED", "genre": "Experimental Bass", "comment": "This is what I'd imagined the XS room would be about. Sounds good"},
       {"time": "19:40", "location": "SonarXS", "type": "Live", "from": "ES", "name": "DELLAFUENTE Y MAKA", "genre": "Flamenco Rap", "comment": "Couldn't find much on this group other than it's some kind of flamenco Rap"},
-      {"time": "20:30", "location": "SonarXS", "type": "DJ", "from": "US", "name": "TOTAL FREEDOM", "genre": "Heavy Dance", "comment": "Might take some time to get going but could be good"},
+      {"time": "20:30", "location": "SonarXS", "type": "DJ", "from": "US", "name": "TOTAL FREEDOM", "genre": "Heavy Dance", "comment": "Might take some time to get going but could be good"}
     ]
   },
   {
@@ -188,7 +188,7 @@
       {"time": "03:05", "location": "SonarLab", "type": "DJ", "from": "DE", "name": "MARCEL DETTMANN & DR RUBINSTEIN", "genre": "Minimal Techno", "comment": "Tamer Lab but some nice builds and steady rhythm should keep you going"},
       {"time": "05:05", "location": "SonarLab", "type": "DJ", "from": "CA / KR", "name": "DAPHNI & HUNEE", "genre": "Dance/Funk", "comment": "Wasn't impressed last I saw Daphni. Recent material sounds good though and with Hunee should be much better"},
 
-      {"time": "00:00", "location": "SonarCar", "type": "DJ", "from": "US / CA", "name": "SETH TROXLER & TIGA", "genre": "Marathon set between these", "comment": "You can expect a range of genres, and a queue to get in"},
+      {"time": "00:00", "location": "SonarCar", "type": "DJ", "from": "US / CA", "name": "SETH TROXLER & TIGA", "genre": "Marathon set between these", "comment": "You can expect a range of genres, and a queue to get in"}
     ]
   }
 ]

@@ -10,7 +10,9 @@ export class HeaderView extends Component {
         paddingHorizontal: 10,
         color: 'white',
         fontWeight: 'bold',
-        fontSize: 24}}>
+        fontSize: 24}}
+        onLayout={this.props.onLayout}
+      >
         {this.props.title}
       </Text>
     )

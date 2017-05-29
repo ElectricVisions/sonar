@@ -6,7 +6,8 @@ export class ArtistView extends Component {
     const artist = this.props.artist;
 
     return (
-      <View style={{
+      <View onLayout={this.props.onLayout}
+        style={{
         padding: 5,
         margin: 5,
         backgroundColor: 'white'
