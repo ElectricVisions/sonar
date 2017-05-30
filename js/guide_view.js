@@ -8,35 +8,38 @@ import NowOn from './now_on'
 export class GuideView extends Component {
   constructor(props) {
     super(props)
-    this.state = {}
-    this.headerLayout = this.headerLayout.bind(this)
-    this.artistLayout = this.artistLayout.bind(this)
+    this.state = {heights: []}
+    this.handleLayout = this.handleLayout.bind(this)
+    this.nowOn = this.nowOn.bind(this)
   }
 
-  headerLayout(event) {
-    if(this.state.headerHeight) { return }
-    this.setState({headerHeight: event.nativeEvent.layout.height})
+  nowOn() {
+    return NowOn(new Date(2017, 6, 17, 22, 0))
   }
 
-  artistLayout(event) {
-    if(this.state.artistHeight) { return }
-    this.setState({artistHeight: event.nativeEvent.layout.height})
-    setTimeout(() => {
-      this.scrollView.scrollTo({y: NowOn().y(
-        this.state.headerHeight,
-        this.state.artistHeight)})
-    }, 0)
+  handleLayout(event) {
+    const heights = this.state.heights.concat(event.nativeEvent.layout.height)
+    this.setState({
+      heights: heights,
+    })
+    if (heights.length === this.nowOn().count()) {
+      setTimeout(() => {
+        const position = heights.slice(0, this.nowOn().index() + 1).reduce((total, height) => total + height, 0)
+        this.scrollView.scrollTo({y: position})
+      }, 1)
+    }
   }
 
   render() {
     const data = guideData.map( (section) =>
-      <View key={`${section.day}${section.venue}`}>
+      <View
+        key={`${section.day}${section.venue}`}>
         <HeaderView
-          onLayout={this.headerLayout}
-          title={section.day}/>
-        {section.artists.map( (artist) =>
+          onLayout={this.handleLayout}
+          title={`${section.day} ${section.venue}`}/>
+        {this.nowOn().sort(section.artists).map( (artist) =>
           <ArtistView
-            onLayout={this.artistLayout}
+            onLayout={this.handleLayout}
             key={`${artist.location}${section.day}${artist.time}`}
             artist={artist}
           />
