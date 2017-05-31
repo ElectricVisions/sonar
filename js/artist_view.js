@@ -8,9 +8,10 @@ export class ArtistView extends Component {
     return (
       <View onLayout={this.props.onLayout}
         style={{
-        padding: 5,
-        margin: 5,
-        backgroundColor: 'white'
+          padding: 10,
+          borderBottomWidth: 0.5,
+          borderColor: 'grey',
+          backgroundColor: 'white',
       }}>
         <Text style={{
           color: 'black',

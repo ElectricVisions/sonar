@@ -14,7 +14,7 @@ export class GuideView extends Component {
   }
 
   nowOn() {
-    return NowOn(new Date(2017, 6, 17, 22, 0))
+    return NowOn(new Date(2017, 6, 17, 22, 0), guideData[2].artists)
   }
 
   handleLayout(event) {
@@ -22,7 +22,7 @@ export class GuideView extends Component {
     this.setState({
       heights: heights,
     })
-    if (heights.length === this.nowOn().count()) {
+    if (heights.length === this.nowOn().count) {
       setTimeout(() => {
         const position = heights.slice(0, this.nowOn().index() + 1).reduce((total, height) => total + height, 0)
         this.scrollView.scrollTo({y: position})
@@ -31,12 +31,11 @@ export class GuideView extends Component {
   }
 
   render() {
-    const data = guideData.map( (section) =>
+    const section = guideData[2]
+
+    const data =
       <View
         key={`${section.day}${section.venue}`}>
-        <HeaderView
-          onLayout={this.handleLayout}
-          title={`${section.day} ${section.venue}`}/>
         {this.nowOn().sort(section.artists).map( (artist) =>
           <ArtistView
             onLayout={this.handleLayout}
@@ -45,14 +44,17 @@ export class GuideView extends Component {
           />
         )}
       </View>
-    )
 
     return (
-      <ScrollView
-        ref={view => this.scrollView = view}
-        style={{backgroundColor: 'rgb(233, 211, 218)'}}>
-        {data}
-      </ScrollView>
+      <View>
+        <HeaderView selected='Fri Night'/>
+        <ScrollView
+          ref={view => this.scrollView = view}
+          style={{backgroundColor: 'rgb(233, 211, 218)'}}
+        >
+          {data}
+        </ScrollView>
+      </View>
     )
   }
 }

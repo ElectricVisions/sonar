@@ -1,59 +1,48 @@
 import subject from '../js/now_on'
 
 describe('index', () => {
-  const thursdayArtists = 31
-  const fridayDayArtists = 31
-  const fridayNightArtists = 23
-  const saturdayDayArtists = 32
+  const artists = [
+    { time: '01:00' },
+    { time: '17:30' },
+    { time: '16:00' },
+    { time: '13:00' },
+    { time: '22:00' },
+    { time: '21:00' },
+  ]
+
+  const dateFrom = function (hour, minute) {
+    return new Date(2017, 6, 15, hour, minute)
+  }
 
   it('returns sorted artists ordering early times last', () => {
-    const date = new Date(2017, 6, 15, 17, 0)
-    const artists = [
-      { time: '01:00' },
-      { time: '16:00' },
-      { time: '13:00' },
-    ]
-    expect(subject(date).sort(artists)).toEqual([
+    expect(subject(new Date(), artists).sort()).toEqual([
       { time: '13:00' },
       { time: '16:00' },
+      { time: '17:30' },
+      { time: '21:00' },
+      { time: '22:00' },
       { time: '01:00' },
     ])
   })
 
-  it('returns height when Thursday', () => {
-    const date = new Date(2017, 6, 15, 17, 0)
-    expect(subject(date).index()).toEqual(1 + 14)
+  it('returns index when before first artist', () => {
+    expect(subject(dateFrom(12, 59), artists).index()).toEqual(0)
   })
 
-  it('returns height when Friday Day', () => {
-    const date = new Date(2017, 6, 16, 16, 0)
-    expect(subject(date).index()).toEqual(
-      1 +
-      thursdayArtists +
-      1 +
-      8)
+  it('returns index when first artist is starting', () => {
+    expect(subject(dateFrom(13, 0), artists).index()).toEqual(0)
   })
 
-  it('returns height when Friday Night', () => {
-    const date = new Date(2017, 6, 16, 21, 15)
-    expect(subject(date).index()).toEqual(
-      1 +
-      thursdayArtists +
-      1 +
-      fridayDayArtists +
-      1)
+  it('returns index when last artist is starting', () => {
+    expect(subject(dateFrom(1, 0), artists).index()).toEqual(5)
   })
 
-  it('returns height when Saturday Night', () => {
-    const date = new Date(2017, 6, 17, 21, 15)
-    expect(subject(date).index()).toEqual(
-      1 +
-      thursdayArtists +
-      1 +
-      fridayDayArtists +
-      1 +
-      fridayDayArtists +
-      1 +
-      fridayNightArtists)
+  it('returns index when after last artist', () => {
+    expect(subject(dateFrom(2, 0), artists).index()).toEqual(5)
+  })
+
+  it('returns index when time is within artist times', () => {
+    expect(subject(dateFrom(17, 0), artists).index()).toEqual(1)
+    expect(subject(dateFrom(21, 15), artists).index()).toEqual(3)
   })
 })
