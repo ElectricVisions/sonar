@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 0.5,
     borderColor: 'grey',
     backgroundColor: 'white',
+    height: 115,
   },
   name: {
     color: 'black',

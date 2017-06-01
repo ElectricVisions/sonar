@@ -3,8 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export class HeaderView extends Component {
   render() {
-    const tabs = ['Thurs Day', 'Fri Day', 'Fri Night', 'Sat Day', 'Sat Night']
-      .map( tab => {
+    const tabs = this.props.tabs.map( tab => {
         let style = [styles.tab]
         if (this.props.selected === tab) { style.push(styles.selected) }
         return <Text key={tab} style={style}>{tab}</Text>
