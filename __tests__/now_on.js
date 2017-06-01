@@ -43,6 +43,7 @@ describe('index', () => {
 
   it('returns index when time is within artist times', () => {
     expect(subject(dateFrom(17, 0), artists).index()).toEqual(1)
+    expect(subject(dateFrom(22, 0), artists).index()).toEqual(4)
     expect(subject(dateFrom(21, 15), artists).index()).toEqual(3)
   })
 })

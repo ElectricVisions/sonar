@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, ScrollView } from 'react-native'
+import { ScrollView, View, Text } from 'react-native'
 import guideData from '../guide.json'
 import { ArtistView } from './artist_view'
 import { HeaderView } from './header_view'
@@ -24,7 +24,8 @@ export class GuideView extends Component {
     })
     if (heights.length === this.nowOn().count) {
       setTimeout(() => {
-        const position = heights.slice(0, this.nowOn().index() + 1).reduce((total, height) => total + height, 0)
+        const position = heights.slice(0, this.nowOn().index())
+          .reduce((total, height) => total + height, 0)
         this.scrollView.scrollTo({y: position})
       }, 1)
     }
@@ -33,9 +34,8 @@ export class GuideView extends Component {
   render() {
     const section = guideData[2]
 
-    const data =
-      <View
-        key={`${section.day}${section.venue}`}>
+    const shownDay =
+      <View key={`${section.day}${section.venue}`}>
         {this.nowOn().sort(section.artists).map( (artist) =>
           <ArtistView
             onLayout={this.handleLayout}
@@ -45,14 +45,26 @@ export class GuideView extends Component {
         )}
       </View>
 
+    const otherDays = guideData
+      .filter( section => !(section.day === 'Friday' && section.venue === 'Night'))
+      .map( section =>
+      <View key={`${section.day}${section.venue}`}>
+        {this.nowOn().sort(section.artists).map( (artist) =>
+          <ArtistView
+            key={`${artist.location}${section.day}${artist.time}`}
+            artist={artist}
+            hidden={true}
+          />
+        )}
+      </View>
+    )
+
     return (
       <View>
         <HeaderView selected='Fri Night'/>
-        <ScrollView
-          ref={view => this.scrollView = view}
-          style={{backgroundColor: 'rgb(233, 211, 218)'}}
-        >
-          {data}
+        <ScrollView ref={view => this.scrollView = view}>
+          {shownDay}
+          {otherDays}
         </ScrollView>
       </View>
     )
