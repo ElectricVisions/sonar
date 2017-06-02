@@ -46,4 +46,15 @@ describe('index', () => {
     expect(subject(artists).index(dateFrom(22, 0))).toEqual(4)
     expect(subject(artists).index(dateFrom(21, 15))).toEqual(3)
   })
+
+  it('returns index for first artist at the time', () => {
+    const artists = [
+      { time: '09:00' },
+      { time: '12:00' },
+      { time: '12:00' },
+      { time: '13:00' },
+    ]
+
+    expect(subject(artists).index(dateFrom(12, 20))).toEqual(1)
+  })
 })
