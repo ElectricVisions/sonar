@@ -13,15 +13,15 @@ export class GuideView extends Component {
     this.selectedDay = this.selectedDay.bind(this)
   }
 
-  nowOn() {
-    return NowOn(this.props.dateTime, guideData[2].artists)
-  }
-
   selectedDay() {
     const date = this.props.dateTime.getDate()
     const time = this.props.dateTime.getHours() * 60 + this.props.dateTime.getMinutes()
     const dayNight = (time > (21 * 60 + 30) && date != 15) ? 1 : 0
-    return guideData.filter( section => parseInt(section.date) === date )[dayNight].key
+    return guideData.filter( section => parseInt(section.date) === date )[dayNight]
+  }
+
+  nowOn() {
+    return NowOn(this.props.dateTime, this.selectedDay().artists)
   }
 
   componentDidMount() {
@@ -29,20 +29,18 @@ export class GuideView extends Component {
   }
 
   render() {
-    const section = guideData[2]
-
     return (
       <View>
         <HeaderView
-          selected={this.selectedDay()}
+          selected={this.selectedDay().key}
           tabs={guideData.map( section => section.key )}/>
         <FlatList
           ref={view => this.list = view}
-          data={this.nowOn().sort(section.artists).map( artist =>
+          data={this.nowOn().sort(this.selectedDay().artists).map( artist =>
             Object.assign({}, artist, {
-              key: `${artist.location}${section.day}${artist.time}`
+              key: `${artist.location}${this.selectedDay().day}${artist.time}`
             }))}
-          key={section.key}
+          key={this.selectedDay().key}
           renderItem={({item}) => <ArtistView artist={item}/>}
         />
       </View>
