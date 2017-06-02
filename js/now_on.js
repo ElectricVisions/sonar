@@ -1,4 +1,4 @@
-export default NowOn = function (time, artists) {
+export default NowOn = function (artists) {
   const earlyOffset = function (minutes) {
     return minutes + (minutes < (8 * 60) ? 24 * 60 : 0)
   }
@@ -7,7 +7,6 @@ export default NowOn = function (time, artists) {
     const [hours, minutes] = time.split(':')
     return earlyOffset(parseInt(hours) * 60 + parseInt(minutes))
   }
-  const minutesNow = minutesFrom(`${time.getHours()}:${time.getMinutes()}`)
 
   const sort = function () {
     return artists.sort((a, b) => {
@@ -25,7 +24,8 @@ export default NowOn = function (time, artists) {
 
   const count = times.length
 
-  const index = function () {
+  const index = function (time) {
+    const minutesNow = minutesFrom(`${time.getHours()}:${time.getMinutes()}`)
     const lastIndex = times.length - 1
     if (times[0] >= minutesNow) { return 0 }
     if (times[lastIndex] <= minutesNow) { return lastIndex }

@@ -15,7 +15,7 @@ describe('index', () => {
   }
 
   it('returns sorted artists ordering early times last', () => {
-    expect(subject(new Date(), artists).sort()).toEqual([
+    expect(subject(artists).sort()).toEqual([
       { time: '13:00' },
       { time: '16:00' },
       { time: '17:30' },
@@ -26,24 +26,24 @@ describe('index', () => {
   })
 
   it('returns index when before first artist', () => {
-    expect(subject(dateFrom(12, 59), artists).index()).toEqual(0)
+    expect(subject(artists).index(dateFrom(12, 59))).toEqual(0)
   })
 
   it('returns index when first artist is starting', () => {
-    expect(subject(dateFrom(13, 0), artists).index()).toEqual(0)
+    expect(subject(artists).index(dateFrom(13, 0))).toEqual(0)
   })
 
   it('returns index when last artist is starting', () => {
-    expect(subject(dateFrom(1, 0), artists).index()).toEqual(5)
+    expect(subject(artists).index(dateFrom(1, 0))).toEqual(5)
   })
 
   it('returns index when after last artist', () => {
-    expect(subject(dateFrom(2, 0), artists).index()).toEqual(5)
+    expect(subject(artists).index(dateFrom(2, 0))).toEqual(5)
   })
 
   it('returns index when time is within artist times', () => {
-    expect(subject(dateFrom(17, 0), artists).index()).toEqual(1)
-    expect(subject(dateFrom(22, 0), artists).index()).toEqual(4)
-    expect(subject(dateFrom(21, 15), artists).index()).toEqual(3)
+    expect(subject(artists).index(dateFrom(17, 0))).toEqual(1)
+    expect(subject(artists).index(dateFrom(22, 0))).toEqual(4)
+    expect(subject(artists).index(dateFrom(21, 15))).toEqual(3)
   })
 })

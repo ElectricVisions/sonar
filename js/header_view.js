@@ -12,6 +12,12 @@ export class HeaderView extends Component {
     this.props.onPress(tab)
   }
 
+  componentWillUpdate(nextProps, nextState) {
+    if (nextProps.selected !== nextState.selected) {
+      this.setState({ selected: nextProps.selected })
+    }
+  }
+
   render() {
     const tabs = this.props.tabs.map( tab => {
       let style = [styles.tab]

@@ -1,36 +1,54 @@
 import React, { Component } from 'react'
-import { FlatList, View, Text } from 'react-native'
+import { FlatList, Image, StyleSheet, TouchableOpacity, View, Text } from 'react-native'
 import guideData from '../guide.json'
 import { ArtistView } from './artist_view'
 import { HeaderView } from './header_view'
 import NowOn from './now_on'
 
 const HEIGHT = 115
+const DEFAULT_DATE = new Date(2017, 6, 15, 14, 30)
 
 export class GuideView extends Component {
   constructor(props) {
     super(props)
-    this.state = { selected: this.selectedDay() }
+    this.state = this.setupState()
     this.handlePress = this.handlePress.bind(this)
+    this.handleRefresh = this.handleRefresh.bind(this)
+    this.setupState = this.setupState.bind(this)
   }
 
-  selectedDay() {
-    const date = this.props.dateTime.getDate()
-    const time = this.props.dateTime.getHours() * 60 + this.props.dateTime.getMinutes()
+  setupState(selected) {
+    let dateTime = new Date()
+    if ( !(dateTime.getMonth() === 6 && [15, 16, 17].includes(dateTime.getDate()))) {
+      dateTime = DEFAULT_DATE
+    }
+    selected = selected || this.selectedDay(dateTime)
+    const nowOn = NowOn(selected.artists)
+    return { dateTime, selected, nowOn }
+  }
+
+  selectedDay(dateTime) {
+    const date = dateTime.getDate()
+    const time = dateTime.getHours() * 60 + dateTime.getMinutes()
     const dayNight = (time > (21 * 60 + 30) && date != 15) ? 1 : 0
     return guideData.filter( section => parseInt(section.date) === date )[dayNight]
   }
 
-  nowOn() {
-    return NowOn(this.props.dateTime, this.state.selected.artists)
+  componentDidMount() {
+    setTimeout( () =>  this.scrollToCurrent(), 200 )
   }
 
-  componentDidMount() {
-    setTimeout( () => this.list.scrollToIndex({index: this.nowOn().index()}), 200 )
+  scrollToCurrent() {
+    this.list.scrollToIndex({index: this.state.nowOn.index(this.state.dateTime)})
   }
 
   handlePress(tab) {
-    this.setState({ selected: guideData.find( section => section.key === tab ) })
+    this.setState(this.setupState(guideData.find( section => section.key === tab )))
+  }
+
+  handleRefresh() {
+    this.setState(this.setupState())
+    this.componentDidMount()
   }
 
   render() {
@@ -40,20 +58,39 @@ export class GuideView extends Component {
           selected={this.state.selected.key}
           tabs={guideData.map( section => section.key )}
           onPress={this.handlePress}
+          onRefresh={this.setupState}
         />
         <FlatList
           style={{flex: 1}}
           ref={view => this.list = view}
-          data={this.nowOn().sort(this.state.selected.artists).map( artist =>
+          data={this.state.nowOn.sort().map( artist =>
             Object.assign({}, artist, {
-              key: `${artist.location}${this.selectedDay().day}${artist.time}`
-            }))}
-            key={this.state.selected.key}
-            renderItem={({item}) => <ArtistView artist={item}/>}
-            getItemLayout={(data, index) => ( {length: HEIGHT, offset: HEIGHT * index, index} )}
-            itemHeight={HEIGHT}
+              key: `${artist.location}${this.state.selected.day}${artist.time}`
+            }))
+          }
+          key={this.state.selected.key}
+          renderItem={({item}) => <ArtistView artist={item}/>}
+          getItemLayout={(data, index) => ( {length: HEIGHT, offset: HEIGHT * index, index} )}
+          itemHeight={HEIGHT}
+        />
+        <TouchableOpacity
+          style={styles.refreshButton}
+          onPress={this.handleRefresh}>
+          <Image
+            source={require('../sync.png')}
           />
+        </TouchableOpacity>
       </View>
     )
   }
 }
+
+const styles = StyleSheet.create({
+  refreshButton: {
+    position: 'absolute',
+    bottom: 10,
+    right: 10,
+    width: 48,
+    height: 48,
+  }
+})
