@@ -35,23 +35,24 @@ export class GuideView extends Component {
 
   render() {
     return (
-      <View>
+      <View style={{flex: 1}}>
         <HeaderView
           selected={this.state.selected.key}
           tabs={guideData.map( section => section.key )}
           onPress={this.handlePress}
         />
         <FlatList
+          style={{flex: 1}}
           ref={view => this.list = view}
           data={this.nowOn().sort(this.state.selected.artists).map( artist =>
             Object.assign({}, artist, {
               key: `${artist.location}${this.selectedDay().day}${artist.time}`
             }))}
-          key={this.state.selected.key}
-          renderItem={({item}) => <ArtistView artist={item}/>}
-          getItemLayout={(data, index) => ( {length: HEIGHT, offset: HEIGHT * index, index} )}
-          itemHeight={HEIGHT}
-        />
+            key={this.state.selected.key}
+            renderItem={({item}) => <ArtistView artist={item}/>}
+            getItemLayout={(data, index) => ( {length: HEIGHT, offset: HEIGHT * index, index} )}
+            itemHeight={HEIGHT}
+          />
       </View>
     )
   }
