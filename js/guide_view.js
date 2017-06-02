@@ -11,23 +11,21 @@ export class GuideView extends Component {
 
     this.nowOn = this.nowOn.bind(this)
     this.selectedDay = this.selectedDay.bind(this)
-
-    this.dateTime = new Date(2017, 6, 16, 22, 0)
   }
 
   nowOn() {
-    return NowOn(this.dateTime, guideData[2].artists)
+    return NowOn(this.props.dateTime, guideData[2].artists)
   }
 
   selectedDay() {
-    const date = this.dateTime.getDate()
-    const time = this.dateTime.getHours() * 60 + this.dateTime.getMinutes()
+    const date = this.props.dateTime.getDate()
+    const time = this.props.dateTime.getHours() * 60 + this.props.dateTime.getMinutes()
     const dayNight = (time > (21 * 60 + 30) && date != 15) ? 1 : 0
     return guideData.filter( section => parseInt(section.date) === date )[dayNight].key
   }
 
   componentDidMount() {
-    setTimeout( () => this.list.scrollToIndex({index: this.nowOn().index()}), 250 )
+    setTimeout( () => this.list.scrollToIndex({index: this.nowOn().index()}), 200 )
   }
 
   render() {
