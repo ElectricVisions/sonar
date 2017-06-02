@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export class ArtistView extends Component {
   render() {
     const artist = this.props.artist;
-    let style = [styles.view]
+    let style = [styles.view, {height: this.props.itemHeight}]
     if (this.props.hidden) { style.push(styles.hidden) }
 
     return (
@@ -32,7 +32,6 @@ const styles = StyleSheet.create({
     borderBottomWidth: 0.5,
     borderColor: 'grey',
     backgroundColor: 'white',
-    height: 115,
   },
   name: {
     color: 'black',

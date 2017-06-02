@@ -29,7 +29,8 @@ export default NowOn = function (time, artists) {
     const lastIndex = times.length - 1
     if (times[0] >= minutesNow) { return 0 }
     if (times[lastIndex] <= minutesNow) { return lastIndex }
-    return times.findIndex(time => time > minutesNow) - 1
+    const index = times.findIndex(time => time > minutesNow) - 1
+    return times.findIndex(time => time === times[index])
   }
 
   return {

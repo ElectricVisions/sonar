@@ -5,12 +5,13 @@ import { ArtistView } from './artist_view'
 import { HeaderView } from './header_view'
 import NowOn from './now_on'
 
+const HEIGHT = 115
+
 export class GuideView extends Component {
   constructor(props) {
     super(props)
-
-    this.nowOn = this.nowOn.bind(this)
-    this.selectedDay = this.selectedDay.bind(this)
+    this.state = { selected: this.selectedDay() }
+    this.handlePress = this.handlePress.bind(this)
   }
 
   selectedDay() {
@@ -21,27 +22,35 @@ export class GuideView extends Component {
   }
 
   nowOn() {
-    return NowOn(this.props.dateTime, this.selectedDay().artists)
+    return NowOn(this.props.dateTime, this.state.selected.artists)
   }
 
   componentDidMount() {
     setTimeout( () => this.list.scrollToIndex({index: this.nowOn().index()}), 200 )
   }
 
+  handlePress(tab) {
+    this.setState({ selected: guideData.find( section => section.key === tab ) })
+  }
+
   render() {
     return (
       <View>
         <HeaderView
-          selected={this.selectedDay().key}
-          tabs={guideData.map( section => section.key )}/>
+          selected={this.state.selected.key}
+          tabs={guideData.map( section => section.key )}
+          onPress={this.handlePress}
+        />
         <FlatList
           ref={view => this.list = view}
-          data={this.nowOn().sort(this.selectedDay().artists).map( artist =>
+          data={this.nowOn().sort(this.state.selected.artists).map( artist =>
             Object.assign({}, artist, {
               key: `${artist.location}${this.selectedDay().day}${artist.time}`
             }))}
-          key={this.selectedDay().key}
+          key={this.state.selected.key}
           renderItem={({item}) => <ArtistView artist={item}/>}
+          getItemLayout={(data, index) => ( {length: HEIGHT, offset: HEIGHT * index, index} )}
+          itemHeight={HEIGHT}
         />
       </View>
     )
