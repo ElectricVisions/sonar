@@ -5,37 +5,285 @@
     "day": "Thursday",
     "venue": "Day",
     "artists": [
-      {"time": "13:00", "location": "SonarVillage", "type": "live", "from": "ES", "name": "Tutu", "genre": "Abstract/Dance/Techno", "comment": "Great first artist"},
-      {"time": "14:30", "location": "SonarVillage", "type": "live", "from": "ES", "name": "BFlecha", "genre": "R&B/Spanish Pop", "comment": "not sure"},
-      {"time": "15:35", "location": "SonarVillage", "type": "live", "from": "ES", "name": "Rumore", "genre": "Sunny House", "comment": "Some nice sounds"},
-      {"time": "16:40", "location": "SonarVillage", "type": "live", "from": "US", "name": "Princess Nokia", "genre": "R&B/Rapper", "comment": "Seems a bit angry"},
-      {"time": "17:20", "location": "SonarVillage", "type": "DJ", "from": "ES", "name": "Bawrut", "genre": "Acid Rumba", "comment": "Funky!"},
-      {"time": "18:30", "location": "SonarVillage", "type": "live", "from": "US", "name": "DAWN", "genre": "Dramatic R&B", "comment": "not my thing but good if it is yours"},
-      {"time": "19:30", "location": "SonarVillage", "type": "DJ", "from": "NO", "name": "Prins Thomas", "genre": "Classy disco", "comment": "Nice bass synths, retro in a good way"},
-      {"time": "21:00", "location": "SonarVillage", "type": "live", "from": "AT", "name": "HVOB", "genre": "Electropop/Techno", "comment": "Dancey melodic electro pop bubbling gradually into techno. Like"},
-      {"time": "22:10", "location": "SonarVillage", "type": "DJ", "from": "UK", "name": "Craig Richards", "genre": "Spacey House/Techno/Funk", "comment": "Fabric Resident Deffo check out"},
-      {"time": "13:00", "location": "SonarDôme", "type": "live", "from": "ES", "name": "Lanoche", "genre": "Deep House", "comment": "Perfect for a Thursday afternoon"},
-      {"time": "13:50", "location": "SonarDôme", "type": "DJ", "from": "TW", "name": "RayRay", "genre": "Trippy HH", "comment": "Could be good"},
-      {"time": "14:55", "location": "SonarDôme", "type": "DJ", "from": "KR", "name": "MIIIN", "genre": "Korean Electro Pop/TH", "comment": "Not sure, might throw in a surprise"},
-      {"time": "16:00", "location": "SonarDôme", "type": "live", "from": "SA", "name": "Christian Tiger School", "genre": "Electro/Techno/House/HH/Instrumental", "comment": "yeah!"},
-      {"time": "17:20", "location": "SonarDôme", "type": "live", "from": "DE", "name": "Daniel Brandt", "genre": "Classical with Bass and synth", "comment": "bit retro"},
-      {"time": "18:20", "location": "SonarDôme", "type": "live", "from": "US", "name": "Earl Sweatshirt", "genre": "Rapper", "comment": "Nope"},
-      {"time": "19:15", "location": "SonarDôme", "type": "DJ", "from": "US", "name": "RP Boo", "genre": "Rapper", "comment": "Not for me"},
-      {"time": "20:30", "location": "SonarDôme", "type": "DJ", "from": "UK", "name": "Denis Sulta", "genre": "Progressive House", "comment": "Light, funky and surprising"},
-      {"time": "14:30", "location": "SonarHall", "type": "Live", "from": "PT", "name": "Boris Chimp 504", "genre": "Arty electro", "comment": "out there man! Fits right in!"},
-      {"time": "16:30", "location": "SonarHall", "type": "Live", "from": "EE", "name": "Tommy Cash", "genre": "Rap", "comment": "Move along"},
-      {"time": "18:30", "location": "SonarHall", "type": "Live", "from": "UK", "name": "Forest Swords", "genre": "Strings, Airy vocals, Folk, dub", "comment": "Out there but like it"},
-      {"time": "21:00", "location": "SonarHall", "type": "Live", "from": "VE", "name": "Arca", "genre": "Latin Futuristic Electro", "comment": "like it"},
-      {"time": "13:30", "location": "SonarComplex", "type": "Live", "from": "", "name": "Dopplereffekt", "genre": "Electronic", "comment": "Scientists, artists, coders, boom!"},
-      {"time": "16:00", "location": "SonarComplex", "type": "Live", "from": "", "name": "Dopplereffekt", "genre": "Electronic", "comment": "Scientists, artists, coders, boom!"},
-      {"time": "18:00", "location": "SonarComplex", "type": "Live", "from": "NL", "name": "Tarik Barri", "genre": "Pianos/Orchestral/Electronic", "comment": "Serious potential"},
-      {"time": "20:00", "location": "SonarComplex", "type": "Live", "from": "UK", "name": "Andy Stott", "genre": "Dark House/Slow", "comment": "Could be anything, worth a look?"},
-      {"time": "16:00", "location": "SonarXS", "type": "DJ", "from": "UK", "name": "Conor Thomas", "genre": "Electronic, soundscapes", "comment": "bass, slow, large speakers needed"},
-      {"time": "16:50", "location": "SonarXS", "type": "DJ", "from": "SE", "name": "Toxe", "genre": "Some heavy stuff", "comment": "Could be just the ticket"},
-      {"time": "17:55", "location": "SonarXS", "type": "DJ", "from": "ES", "name": "BSN Posse", "genre": "Funk/HH/Soul/Dub", "comment": "Something for everyone"},
-      {"time": "19:00", "location": "SonarXS", "type": "Live", "from": "ES", "name": "Yung Beef", "genre": "R&B?", "comment": "Someone take that autotune off him"},
-      {"time": "19:50", "location": "SonarXS", "type": "Live", "from": "US", "name": "Yves Tumor", "genre": "Worldy and strange", "comment": "okay if you need to slow down"},
-      {"time": "20:35", "location": "SonarXS", "type": "DJ", "from": "UK", "name": "DJ Bus Replacement Service", "genre": "Comical", "comment": "at least I think it's meant to be"}
+      {
+        "time": "13:00",
+        "location": "SonarVillage",
+        "type": "live",
+        "from": "ES",
+        "name": "Tutu",
+        "genre": "Abstract/Dance/Techno",
+        "comment": "Great first artist."
+      },
+      {
+        "time": "14:30",
+        "location": "SonarVillage",
+        "type": "live",
+        "from": "ES",
+        "name": "BFlecha",
+        "genre": "R&B/Spanish Pop",
+        "comment": "not sure."
+      },
+      {
+        "time": "15:35",
+        "location": "SonarVillage",
+        "type": "live",
+        "from": "ES",
+        "name": "Rumore",
+        "genre": "Sunny House",
+        "comment": "Some nice sounds."
+      },
+      {
+        "time": "16:40",
+        "location": "SonarVillage",
+        "type": "live",
+        "from": "US",
+        "name": "Princess Nokia",
+        "genre": "R&B/Rap",
+        "comment": "Seems a bit angry."
+      },
+      {
+        "time": "17:20",
+        "location": "SonarVillage",
+        "type": "DJ",
+        "from": "ES",
+        "name": "Bawrut",
+        "genre": "Acid Rumba",
+        "comment": "Funky!."
+      },
+      {
+        "time": "18:30",
+        "location": "SonarVillage",
+        "type": "live",
+        "from": "US",
+        "name": "DAWN",
+        "genre": "Dramatic R&B",
+        "comment": "not my thing but good if it is yours."
+      },
+      {
+        "time": "19:30",
+        "location": "SonarVillage",
+        "type": "DJ",
+        "from": "NO",
+        "name": "Prins Thomas",
+        "genre": "Classy disco",
+        "comment": "Nice bass synths, retro in a good way."
+      },
+      {
+        "time": "21:00",
+        "location": "SonarVillage",
+        "type": "live",
+        "from": "AT",
+        "name": "HVOB",
+        "genre": "Electropop/Techno",
+        "comment": "Dancey melodic electro pop bubbling gradually into techno. Like."
+      },
+      {
+        "time": "22:10",
+        "location": "SonarVillage",
+        "type": "DJ",
+        "from": "UK",
+        "name": "Craig Richards",
+        "genre": "Spacey House/Techno/Funk",
+        "comment": "Fabric Resident. Builds, grooves, fills. Sexy! Deffo check out."
+      },
+      {
+        "time": "13:00",
+        "location": "SonarDôme",
+        "type": "live",
+        "from": "ES",
+        "name": "Lanoche",
+        "genre": "Deep House",
+        "comment": "Perfect for a Thursday afternoon."
+      },
+      {
+        "time": "13:50",
+        "location": "SonarDôme",
+        "type": "DJ",
+        "from": "TW",
+        "name": "RayRay",
+        "genre": "Trippy HH",
+        "comment": "Could be good."
+      },
+      {
+        "time": "14:55",
+        "location": "SonarDôme",
+        "type": "DJ",
+        "from": "KR",
+        "name": "MIIIN",
+        "genre": "Korean Electro Pop/TH",
+        "comment": "Not sure, might throw in a surprise."
+      },
+      {
+        "time": "16:00",
+        "location": "SonarDôme",
+        "type": "live",
+        "from": "SA",
+        "name": "Christian Tiger School",
+        "genre": "Electro/Techno/House/HH/Instrumental",
+        "comment": "yeah!."
+      },
+      {
+        "time": "17:20",
+        "location": "SonarDôme",
+        "type": "live",
+        "from": "DE",
+        "name": "Daniel Brandt & Eternal Something",
+        "genre": "Classical with Bass and synth",
+        "comment": "bit retro."
+      },
+      {
+        "time": "18:20",
+        "location": "SonarDôme",
+        "type": "live",
+        "from": "US",
+        "name": "Earl Sweatshirt",
+        "genre": "Rap",
+        "comment": "Nope."
+      },
+      {
+        "time": "19:15",
+        "location": "SonarDôme",
+        "type": "DJ",
+        "from": "US",
+        "name": "RP Boo",
+        "genre": "Rapper",
+        "comment": "Not for me."
+      },
+      {
+        "time": "20:30",
+        "location": "SonarDôme",
+        "type": "DJ",
+        "from": "UK",
+        "name": "Denis Sulta",
+        "genre": "Progressive House",
+        "comment": "Light, funky and surprising."
+      },
+      {
+        "time": "14:30",
+        "location": "SonarHall",
+        "type": "Live",
+        "from": "PT",
+        "name": "Boris Chimp 504",
+        "genre": "Arty electro",
+        "comment": "out there man! Fits right in!."
+      },
+      {
+        "time": "16:30",
+        "location": "SonarHall",
+        "type": "Live",
+        "from": "EE",
+        "name": "Tommy Cash",
+        "genre": "Rap",
+        "comment": "Move along."
+      },
+      {
+        "time": "18:30",
+        "location": "SonarHall",
+        "type": "Live",
+        "from": "UK",
+        "name": "Forest Swords",
+        "genre": "Strings, Airy vocals, Folk, dub",
+        "comment": "Out there but like it."
+      },
+      {
+        "time": "21:00",
+        "location": "SonarHall",
+        "type": "Live",
+        "from": "VE",
+        "name": "Arca & Jesse Kanda",
+        "genre": "Latin Futuristic Electro",
+        "comment": "like it."
+      },
+      {
+        "time": "13:30",
+        "location": "SonarComplex",
+        "type": "Live",
+        "from": "",
+        "name": "Dopplereffekt + Antivj",
+        "genre": "Electronic",
+        "comment": "Scientists, artists, coders, boom!."
+      },
+      {
+        "time": "16:00",
+        "location": "SonarComplex",
+        "type": "Live",
+        "from": "",
+        "name": "Dopplereffekt + Antivj",
+        "genre": "Electronic",
+        "comment": "Scientists, artists, coders, boom!."
+      },
+      {
+        "time": "18:00",
+        "location": "SonarComplex",
+        "type": "Live",
+        "from": "NL",
+        "name": "Tarik Barri ft LEa Fabrikant",
+        "genre": "Pianos/Orchestral/Electronic",
+        "comment": "Serious potential."
+      },
+      {
+        "time": "20:00",
+        "location": "SonarComplex",
+        "type": "Live",
+        "from": "UK",
+        "name": "Andy Stott",
+        "genre": "Dark House/Slow",
+        "comment": "Could be anything, worth a look?."
+      },
+      {
+        "time": "16:00",
+        "location": "SonarXS",
+        "type": "DJ",
+        "from": "UK",
+        "name": "Conor Thomas",
+        "genre": "Electronic, soundscapes",
+        "comment": "bass, slow, large speakers needed."
+      },
+      {
+        "time": "16:50",
+        "location": "SonarXS",
+        "type": "DJ",
+        "from": "SE",
+        "name": "Toxe",
+        "genre": "Some heavy stuff",
+        "comment": "Could be just the ticket."
+      },
+      {
+        "time": "17:55",
+        "location": "SonarXS",
+        "type": "DJ",
+        "from": "ES",
+        "name": "BSN Posse",
+        "genre": "Funk/HH/Soul/Dub",
+        "comment": "Something for everyone."
+      },
+      {
+        "time": "19:00",
+        "location": "SonarXS",
+        "type": "Live",
+        "from": "ES",
+        "name": "Yung Beef",
+        "genre": "R&B?",
+        "comment": "Someone take that autotune off him."
+      },
+      {
+        "time": "19:50",
+        "location": "SonarXS",
+        "type": "Live",
+        "from": "US",
+        "name": "Yves Tumor",
+        "genre": "Worldy and strange",
+        "comment": "okay if you need to slow down."
+      },
+      {
+        "time": "20:35",
+        "location": "SonarXS",
+        "type": "DJ",
+        "from": "UK",
+        "name": "Dj Bus Replacement Service",
+        "genre": "Comical",
+        "comment": "at least I think it's meant to be."
+      }
     ]
   },
   {
@@ -44,37 +292,285 @@
     "day": "Friday",
     "venue": "Day",
     "artists": [
-      {"time": "13:00", "location": "SonarVillage", "type": "DJ", "from": "ES", "name": "DIEGO ARMANDO", "genre": "Afro Jamaican/Big Band", "comment": "Gentle jazzy start to the day"},
-      {"time": "14:00", "location": "SonarVillage", "type": "Live", "from": "ES", "name": "PLAYBACK MARACAS", "genre": "Latin electro", "comment": "Perfect for their timeslot"},
-      {"time": "15:15", "location": "SonarVillage", "type": "Live", "from": "AR", "name": "JUANA MOLINA", "genre": "Folky synth and guitars", "comment": "Probably other stuff to see"},
-      {"time": "16:05", "location": "SonarVillage", "type": "DJ", "from": "DE", "name": "C/O POP: LENA WILLIKENS", "genre": "Bizarre Electronica", "comment": "Probably even more crazy live"},
-      {"time": "17:35", "location": "SonarVillage", "type": "Live", "from": "DE", "name": "C/O POP: ROOSEVELT", "genre": "Electropop", "comment": "Clear retro, dancey pop voice. Bit cheesy"},
-      {"time": "18:35", "location": "SonarVillage", "type": "DJ", "from": "UK", "name": "STÖÖKI SOUND", "genre": "Grime/HH/Trap", "comment": "It has it's moments"},
-      {"time": "19:35", "location": "SonarVillage", "type": "Live", "from": "NZ", "name": "FAT FREDDY’S DROP", "genre": "Dub/Funk/electro", "comment": "Might depend when you catch them. It's certainly eclectic."},
-      {"time": "21:00", "location": "SonarVillage", "type": "DJ", "from": "UK", "name": "DAMIAN LAZARUS", "genre": "Dance/Electro", "comment": "Good but needs to step it up to close at Sonar Day"},
-      {"time": "13:00", "location": "SonarDôme", "type": "Live", "from": "ES", "name": "JULIÁN MAYORGA", "genre": "Guitars", "comment": "Yeah, no"},
-      {"time": "13:50", "location": "SonarDôme", "type": "Live", "from": "LB", "name": "ETYEN", "genre": "Indietronica", "comment": "Might be worth a listen if others not floating your boat"},
-      {"time": "15:10", "location": "SonarDôme", "type": "Live", "from": "NL", "name": "SOFIE WINTERSON", "genre": "Electropop", "comment": "More plinky plonky. Nice voice though"},
-      {"time": "16:00", "location": "SonarDôme", "type": "Live", "from": "IT", "name": "LAMUSA", "genre": "Ambient", "comment": "Plinky plonky kinda Aphex Twin but with less energy. Nice if you need to mellow out for a bit"},
-      {"time": "17:00", "location": "SonarDôme", "type": "Live", "from": "CA", "name": "RIVER TIBER", "genre": "R&B", "comment": "nice beats and airy vocals. Easy going background"},
-      {"time": "18:00", "location": "SonarDôme", "type": "Live", "from": "IT", "name": "SUZANNE CIANI", "genre": "Classical/Synth", "comment": "Difficult to say. Her albums sound pretty traditional"},
-      {"time": "18:50", "location": "SonarDôme", "type": "Live", "from": "CN", "name": "PAN DAIJING", "genre": "Dark soundtracks with a beat", "comment": "Serious, retro noise generation"},
-      {"time": "19:50", "location": "SonarDôme", "type": "Live", "from": "CA", "name": "MARIE DAVIDSON presents “BULLSHIT TRESHOLD“", "genre": "Synth pop", "comment": "some interesting sounds but goes on a bit"},
-      {"time": "21:00", "location": "SonarDôme", "type": "Live", "from": "US", "name": "FLOORPLAN LIVE (ROBERT HOOD & LYRIC HOOD)", "genre": "Techno", "comment": "Nice floor tapper"},
-      {"time": "14:30", "location": "SonarHall", "type": "Live", "from": "ES", "name": "KINDER MALO & PIMP FLACO", "genre": "Trap", "comment": "New to me. Melodic Rapping in Spanish. Probably good if you're into this"},
-      {"time": "16:30", "location": "SonarHall", "type": "Live", "from": "FR", "name": "JACQUES", "genre": "French Dance", "comment": "Certainly different but I think no"},
-      {"time": "18:30", "location": "SonarHall", "type": "Live", "from": "UK", "name": "EVIAN CHRIST", "genre": "Trance/Hip Hop", "comment": "This is gonna be banging unless the MCing is over the top"},
-      {"time": "20:30", "location": "SonarHall", "type": "Live", "from": "UK", "name": "CLARK", "genre": "Moody Basy IDM", "comment": "We need to see this"},
-      {"time": "14:00", "location": "SonarComplex", "type": "Live", "from": "ES", "name": "AITOR ETXEBARRIA", "genre": "Instrumental Documentary", "comment": "Documentary of the 1937 Spanish bombing. Beautiful"},
-      {"time": "16:00", "location": "SonarComplex", "type": "Live", "from": "ES", "name": "LCC", "genre": "Soundscapes/Dark Techno", "comment": "Bubbling, teasing soundscapes with some banging bass beats. Fancy a peak"},
-      {"time": "18:00", "location": "SonarComplex", "type": "Live", "from": "US", "name": "ELYSIA CRAMPTON", "genre": "Alt Classical", "comment": "Might be a bit too out there"},
-      {"time": "20:00", "location": "SonarComplex", "type": "Live", "from": "FR", "name": "NONOTAK", "genre": "Classic Sonar A/V experience", "comment": "Need to see this"},
-      {"time": "16:00", "location": "SonarXS", "type": "Live", "from": "AR", "name": "JUAN INGARAMO", "genre": "R&B/Electro", "comment": "Sounds like Jamiroquai, a really cheesy version"},
-      {"time": "16:50", "location": "SonarXS", "type": "DJ", "from": "SE", "name": "KABLAM", "genre": "Bass", "comment": "Mental Magnet Morphing!"},
-      {"time": "17:55", "location": "SonarXS", "type": "Live", "from": "IS", "name": "STURLA ATLAS", "genre": "R&B", "comment": "Get me outta here"},
-      {"time": "18:35", "location": "SonarXS", "type": "Live", "from": "ES", "name": "BAD GYAL", "genre": "R&B", "comment": "Poppy autotunetastic"},
-      {"time": "19:15", "location": "SonarXS", "type": "DJ", "from": "UK", "name": "DJ FLORENTINO", "genre": "Latin", "comment": "Could be good depending on mood"},
-      {"time": "20:20", "location": "SonarXS", "type": "DJ", "from": "FR", "name": "KIDDY SMILE", "genre": "Dance/Disco - Wow retro dance", "comment": "unless I took the wrong thing I'll be elsewhere"}
+      {
+        "time": "13:00",
+        "location": "SonarVillage",
+        "type": "DJ",
+        "from": "ES",
+        "name": "Diego Armando",
+        "genre": "Afro Jamaican/Big Band",
+        "comment": "Gentle jazzy start to the day."
+      },
+      {
+        "time": "14:00",
+        "location": "SonarVillage",
+        "type": "Live",
+        "from": "ES",
+        "name": "Playback Maracas",
+        "genre": "Latin electro",
+        "comment": "Perfect for their timeslot."
+      },
+      {
+        "time": "15:15",
+        "location": "SonarVillage",
+        "type": "Live",
+        "from": "AR",
+        "name": "Juana Molina",
+        "genre": "Folky synth and guitars",
+        "comment": "Probably other stuff to see."
+      },
+      {
+        "time": "16:05",
+        "location": "SonarVillage",
+        "type": "DJ",
+        "from": "DE",
+        "name": "c/o pop: Lena Willikens",
+        "genre": "Bizarre Electronica",
+        "comment": "Probably even more crazy live."
+      },
+      {
+        "time": "17:35",
+        "location": "SonarVillage",
+        "type": "Live",
+        "from": "DE",
+        "name": "c/o pop: Roosevelt",
+        "genre": "Electropop",
+        "comment": "Clear retro, dancey pop voice. Bit cheesy."
+      },
+      {
+        "time": "18:35",
+        "location": "SonarVillage",
+        "type": "DJ",
+        "from": "UK",
+        "name": "Stööki Sound",
+        "genre": "Grime/HH/Trap",
+        "comment": "It has it's moments."
+      },
+      {
+        "time": "19:35",
+        "location": "SonarVillage",
+        "type": "Live",
+        "from": "NZ",
+        "name": "Fat Freddy’s Drop",
+        "genre": "Dub/Funk/electro",
+        "comment": "Might depend when you catch them. It's certainly eclectic."
+      },
+      {
+        "time": "21:00",
+        "location": "SonarVillage",
+        "type": "DJ",
+        "from": "UK",
+        "name": "Damian Lazarus",
+        "genre": "Dance/Electro",
+        "comment": "Good but needs to step it up to close at Sonar Day."
+      },
+      {
+        "time": "13:00",
+        "location": "SonarDôme",
+        "type": "Live",
+        "from": "ES",
+        "name": "Julián Mayorga",
+        "genre": "Guitars",
+        "comment": "Yeah, no."
+      },
+      {
+        "time": "13:50",
+        "location": "SonarDôme",
+        "type": "Live",
+        "from": "LB",
+        "name": "Etyen",
+        "genre": "Indietronica",
+        "comment": "Might be worth a listen if others not floating your boat."
+      },
+      {
+        "time": "15:10",
+        "location": "SonarDôme",
+        "type": "Live",
+        "from": "NL",
+        "name": "Sofie Winterson",
+        "genre": "Electropop",
+        "comment": "More plinky plonky. Nice voice though."
+      },
+      {
+        "time": "16:00",
+        "location": "SonarDôme",
+        "type": "Live",
+        "from": "IT",
+        "name": "Lamusa",
+        "genre": "Ambient",
+        "comment": "Plinky plonky kinda Aphex Twin but with less energy. Nice if you need to mellow out for a bit."
+      },
+      {
+        "time": "17:00",
+        "location": "SonarDôme",
+        "type": "Live",
+        "from": "CA",
+        "name": "River Tiber",
+        "genre": "R&B",
+        "comment": "nice beats and airy vocals. Easy going background."
+      },
+      {
+        "time": "18:00",
+        "location": "SonarDôme",
+        "type": "Live",
+        "from": "IT",
+        "name": "Suzanne Ciani",
+        "genre": "Classical/Synth",
+        "comment": "Difficult to say. Her albums sound pretty traditional."
+      },
+      {
+        "time": "18:50",
+        "location": "SonarDôme",
+        "type": "Live",
+        "from": "CN",
+        "name": "Pan Daijing",
+        "genre": "Dark soundtracks with a beat",
+        "comment": "Serious, retro noise generation."
+      },
+      {
+        "time": "19:50",
+        "location": "SonarDôme",
+        "type": "Live",
+        "from": "CA",
+        "name": "Marie Davidson Pr “Bullshit Treshold“",
+        "genre": "Synth pop",
+        "comment": "some interesting sounds but goes on a bit."
+      },
+      {
+        "time": "21:00",
+        "location": "SonarDôme",
+        "type": "Live",
+        "from": "US",
+        "name": "Floorplan Live (Robert & Lyric Hood)",
+        "genre": "Techno",
+        "comment": "Nice floor tapper."
+      },
+      {
+        "time": "14:30",
+        "location": "SonarHall",
+        "type": "Live",
+        "from": "ES",
+        "name": "Kinder Malo & Pimp Flaco",
+        "genre": "Trap",
+        "comment": "New to me. Melodic Rapping in Spanish. Probably good if you're into this."
+      },
+      {
+        "time": "16:30",
+        "location": "SonarHall",
+        "type": "Live",
+        "from": "FR",
+        "name": "Jacques",
+        "genre": "French Dance",
+        "comment": "Certainly different but I think no."
+      },
+      {
+        "time": "18:30",
+        "location": "SonarHall",
+        "type": "Live",
+        "from": "UK",
+        "name": "Evian Christ",
+        "genre": "Trance/Hip Hop",
+        "comment": "This is gonna be banging unless the MCing is over the top."
+      },
+      {
+        "time": "20:30",
+        "location": "SonarHall",
+        "type": "Live",
+        "from": "UK",
+        "name": "Clark",
+        "genre": "Moody Basy IDM",
+        "comment": "We need to see this."
+      },
+      {
+        "time": "14:00",
+        "location": "SonarComplex",
+        "type": "Live",
+        "from": "ES",
+        "name": "Aitor Etxebarria",
+        "genre": "Instrumental Documentary",
+        "comment": "Documentary of the 1937 Spanish bombing. Beautiful."
+      },
+      {
+        "time": "16:00",
+        "location": "SonarComplex",
+        "type": "Live",
+        "from": "ES",
+        "name": "LCC",
+        "genre": "Soundscapes/Dark Techno",
+        "comment": "Bubbling, teasing soundscapes with some banging bass beats. Fancy a peak."
+      },
+      {
+        "time": "18:00",
+        "location": "SonarComplex",
+        "type": "Live",
+        "from": "US",
+        "name": "Elysia Crampton",
+        "genre": "Alt Classical",
+        "comment": "Might be a bit too out there."
+      },
+      {
+        "time": "20:00",
+        "location": "SonarComplex",
+        "type": "Live",
+        "from": "FR",
+        "name": "Nonotak",
+        "genre": "Classic Sonar A/V experience",
+        "comment": "Need to see this."
+      },
+      {
+        "time": "16:00",
+        "location": "SonarXS",
+        "type": "Live",
+        "from": "AR",
+        "name": "Juan Ingaramo",
+        "genre": "R&B/Electro",
+        "comment": "Sounds like Jamiroquai, a really cheesy version."
+      },
+      {
+        "time": "16:50",
+        "location": "SonarXS",
+        "type": "DJ",
+        "from": "SE",
+        "name": "Kablam",
+        "genre": "Bass",
+        "comment": "Mental Magnet Morphing!."
+      },
+      {
+        "time": "17:55",
+        "location": "SonarXS",
+        "type": "Live",
+        "from": "IS",
+        "name": "Sturla Atlas",
+        "genre": "R&B",
+        "comment": "Get me outta here."
+      },
+      {
+        "time": "18:35",
+        "location": "SonarXS",
+        "type": "Live",
+        "from": "ES",
+        "name": "Bad Gyal",
+        "genre": "R&B",
+        "comment": "Poppy autotunetastic."
+      },
+      {
+        "time": "19:15",
+        "location": "SonarXS",
+        "type": "DJ",
+        "from": "UK",
+        "name": "DJ Florentino",
+        "genre": "Latin",
+        "comment": "Could be good depending on mood."
+      },
+      {
+        "time": "20:20",
+        "location": "SonarXS",
+        "type": "DJ",
+        "from": "FR",
+        "name": "Kiddy Smile",
+        "genre": "Dance/Disco - Wow retro dance",
+        "comment": "unless I took the wrong thing I'll be elsewhere."
+      }
     ]
   },
   {
@@ -83,29 +579,213 @@
     "day": "Friday",
     "venue": "Night",
     "artists": [
-      {"time": "21:30", "location": "SonarClub", "type": "DJ", "from": "ES", "name": "MARIO NIETO", "genre": "?", "comment": "?"},
-      {"time": "22:30", "location": "SonarClub", "type": "Live", "from": "US", "name": "DJ SHADOW", "genre": "?", "comment": "?"},
-      {"time": "23:35", "location": "SonarClub", "type": "DJ", "from": "UK", "name": "JON HOPKINS", "genre": "?", "comment": "?"},
-      {"time": "01:00", "location": "SonarClub", "type": "Live", "from": "DE", "name": "MODERAT", "genre": "Electronic", "comment": "Silky baselines, lyrics slot in. A little mainstream but excellently executed"},
-      {"time": "02:25", "location": "SonarClub", "type": "DJ", "from": "CA", "name": "JACQUES GREEN", "genre": "?", "comment": "?"},
-      {"time": "03:50", "location": "SonarClub", "type": "Live", "from": "BE", "name": "SOULWAX", "genre": "Synthpop/Funk", "comment": "Intelligent retro plinky plonky but maybe should have stayed at home"},
-      {"time": "05:10", "location": "SonarClub", "type": "DJ", "from": "US", "name": "DUBFIRE", "genre": "?", "comment": "?"},
-      {"time": "22:00", "location": "SonarPub", "type": "DJ", "from": "ES", "name": "JUDAH", "genre": "?", "comment": "?"},
-      {"time": "23:30", "location": "SonarPub", "type": "Live", "from": "US", "name": "Anderson .paak & The Free Nat", "genre": "Soul/Funk/Rap", "comment": "Not original enough for me but I'm no expert in this area"},
-      {"time": "00:35", "location": "SonarPub", "type": "DJ", "from": "US", "name": "CLAMS CASINO", "genre": "Trap", "comment": "Real stripped down MCing. Too much talking for me but it's got something that will attract"},
-      {"time": "01:45", "location": "SonarPub", "type": "Live", "from": "US", "name": "NICOLAS JAAR", "genre": "Ambient/Blues/Noise/House/Jazz", "comment": "Slow build"},
-      {"time": "03:20", "location": "SonarPub", "type": "DJ", "from": "US", "name": "DERRICK CARTER", "genre": "Funky House", "comment": "Reasonable toe tapper"},
-      {"time": "05:05", "location": "SonarPub", "type": "DJ", "from": "RU", "name": "NINA KRAVIZ", "genre": "Techno", "comment": "Ambient with Dark beats. Pretty banging!"},
-      {"time": "21:30", "location": "SonarLab", "type": "DJ", "from": "ES", "name": "CHES", "genre": "Dance/HH", "comment": "Finally MCing that doesn't grate. Some well timed beats, synths and bass drops to boot"},
-      {"time": "22:30", "location": "SonarLab", "type": "DJ", "from": "ES", "name": "SANDRO JEEAWOCK", "genre": "Hip Hop", "comment": "HH With odd harmonies, typical Lab content"},
-      {"time": "23:30", "location": "SonarLab", "type": "Live", "from": "SE", "name": "LITTLE DRAGON", "genre": "?", "comment": "?"},
-      {"time": "00:35", "location": "SonarLab", "type": "DJ", "from": "NO", "name": "CASHMERE CAT", "genre": "Synthpop", "comment": "Airy fairy shit"},
-      {"time": "01:40", "location": "SonarLab", "type": "Live", "from": "UK", "name": "AJ TRACEY", "genre": "Grime", "comment": "not my thing"},
-      {"time": "02:15", "location": "SonarLab", "type": "Live", "from": "US", "name": "JLIN", "genre": "?", "comment": "?"},
-      {"time": "03:15", "location": "SonarLab", "type": "Live", "from": "UK", "name": "GIGGS", "genre": "?", "comment": "?"},
-      {"time": "04:10", "location": "SonarLab", "type": "Live", "from": "CA", "name": "LUNICE", "genre": "?", "comment": "?"},
-      {"time": "05:15", "location": "SonarLab", "type": "DJ", "from": "UK", "name": "BENJI B", "genre": "Grime/House", "comment": "Ah another person who likes his voice through an autotune. Mixes it up with some slow bass but doesn't save it for me"},
-      {"time": "00:00", "location": "SonarCar", "type": "Live", "from": "US", "name": "MASTERS AT WORK / 6H SET", "genre": "?", "comment": "?"}
+      {
+        "time": "21:30",
+        "location": "SonarClub",
+        "type": "DJ",
+        "from": "ES",
+        "name": "Mario Nieto",
+        "genre": "Dance/Electronic/Glitch",
+        "comment": "Pretty good but a little generic. Probably on too early unless you're doing Night only."
+      },
+      {
+        "time": "22:30",
+        "location": "SonarClub",
+        "type": "Live",
+        "from": "US",
+        "name": "DJ Shadow",
+        "genre": "Electronic/Sampled/Trip Hop",
+        "comment": "Endtroducing is still a genre defining album. His latest work has some big sounds which are sure to sound epic here."
+      },
+      {
+        "time": "23:35",
+        "location": "SonarClub",
+        "type": "DJ",
+        "from": "UK",
+        "name": "Jon Hopkins",
+        "genre": "Electronic/Glitch",
+        "comment": "My favourite artist of the present day. Mashing classical instruments into the electronic world."
+      },
+      {
+        "time": "01:00",
+        "location": "SonarClub",
+        "type": "Live",
+        "from": "DE",
+        "name": "Moderat",
+        "genre": "Electronic",
+        "comment": "Silky baselines, lyrics slot in. A little mainstream but excellently executed."
+      },
+      {
+        "time": "02:25",
+        "location": "SonarClub",
+        "type": "DJ",
+        "from": "CA",
+        "name": "Jacques Green",
+        "genre": "Dance/House/Funk",
+        "comment": "Light feeling but darker stuff too. Vocals are okay. Better use of autotune. Leaves you wanting. Pop back later if you're not feeling it."
+      },
+      {
+        "time": "03:50",
+        "location": "SonarClub",
+        "type": "Live",
+        "from": "BE",
+        "name": "Soulwax",
+        "genre": "Synthpop/Funk",
+        "comment": "Intelligent retro plinky plonky but maybe should have stayed at home."
+      },
+      {
+        "time": "05:10",
+        "location": "SonarClub",
+        "type": "DJ",
+        "from": "US",
+        "name": "Dubfire",
+        "genre": "Ploddy Techno",
+        "comment": "Sway your way into Saturday morning. Some standout sounds and vocals in there too."
+      },
+      {
+        "time": "22:00",
+        "location": "SonarPub",
+        "type": "DJ",
+        "from": "ES",
+        "name": "Judah",
+        "genre": "R&B/Grime/HH",
+        "comment": "Local talent bringing in Friday night."
+      },
+      {
+        "time": "23:30",
+        "location": "SonarPub",
+        "type": "Live",
+        "from": "US",
+        "name": "Anderson .Paak & The Free Nat",
+        "genre": "Soul/Funk/Rap",
+        "comment": "Not original enough for me but I'm no expert in this area."
+      },
+      {
+        "time": "00:35",
+        "location": "SonarPub",
+        "type": "DJ",
+        "from": "US",
+        "name": "Clams Casino",
+        "genre": "Trap",
+        "comment": "Real stripped down MCing. Too much talking for me but it's got something that will attract."
+      },
+      {
+        "time": "01:45",
+        "location": "SonarPub",
+        "type": "Live",
+        "from": "US",
+        "name": "Nicolas Jaar",
+        "genre": "Ambient/Blues/Noise/House/Jazz",
+        "comment": "Slow build."
+      },
+      {
+        "time": "03:20",
+        "location": "SonarPub",
+        "type": "DJ",
+        "from": "US",
+        "name": "Derrick Carter",
+        "genre": "Funky House",
+        "comment": "Reasonable toe tapper."
+      },
+      {
+        "time": "05:05",
+        "location": "SonarPub",
+        "type": "DJ",
+        "from": "RU",
+        "name": "Nina Kraviz",
+        "genre": "Techno",
+        "comment": "Ambient with Dark beats. Pretty banging!."
+      },
+      {
+        "time": "21:30",
+        "location": "SonarLab",
+        "type": "DJ",
+        "from": "ES",
+        "name": "Ches",
+        "genre": "Dance/HH",
+        "comment": "Finally MCing that doesn't grate. Some well timed beats, synths and bass drops to boot."
+      },
+      {
+        "time": "22:30",
+        "location": "SonarLab",
+        "type": "DJ",
+        "from": "ES",
+        "name": "Sandro Jeeawock",
+        "genre": "Hip Hop",
+        "comment": "HipHop with odd harmonies. Typical Lab content."
+      },
+      {
+        "time": "23:30",
+        "location": "SonarLab",
+        "type": "Live",
+        "from": "SE",
+        "name": "Little Dragon",
+        "genre": "Electro Pop",
+        "comment": "Laid back. Warm sounds. Mellow vocals. Some good rhythms."
+      },
+      {
+        "time": "00:35",
+        "location": "SonarLab",
+        "type": "DJ",
+        "from": "NO",
+        "name": "Cashmere Cat",
+        "genre": "Synthpop",
+        "comment": "Airy fairy shit."
+      },
+      {
+        "time": "01:40",
+        "location": "SonarLab",
+        "type": "Live",
+        "from": "UK",
+        "name": "AJ Tracey",
+        "genre": "Grime",
+        "comment": "Not my thing."
+      },
+      {
+        "time": "02:15",
+        "location": "SonarLab",
+        "type": "Live",
+        "from": "US",
+        "name": "Jlin",
+        "genre": "Worldly/Percussive",
+        "comment": "This one is out there! Gelling percussion, timbres and looped vocals and effects to create some ear pleasing noises. Original."
+      },
+      {
+        "time": "03:15",
+        "location": "SonarLab",
+        "type": "Live",
+        "from": "UK",
+        "name": "Giggs",
+        "genre": "Grime",
+        "comment": "The MCing is decent but the repeated melodies don't provide enough interest for me. Seems a little amateur in places but might just be the upfront mic position."
+      },
+      {
+        "time": "04:10",
+        "location": "SonarLab",
+        "type": "Live",
+        "from": "CA",
+        "name": "Lunice",
+        "genre": "Grime/Trap/HH/Electro",
+        "comment": "Now this is interesting. MCing but layered with a variety of sounds. Plenty of crossover with various genres. Not all talking."
+      },
+      {
+        "time": "05:15",
+        "location": "SonarLab",
+        "type": "DJ",
+        "from": "UK",
+        "name": "Benji B",
+        "genre": "Grime/House",
+        "comment": "Ah another person who likes his voice through an autotune. Mixes it up with some slow bass but doesn't save it for me."
+      },
+      {
+        "time": "00:00",
+        "location": "SonarCar",
+        "type": "Live",
+        "from": "US",
+        "name": "Masters At Work / 6 H Set",
+        "genre": "Retro Dance",
+        "comment": "If you can get in take a trip down memory lane."
+      }
     ]
   },
   {
@@ -114,38 +794,294 @@
     "day": "Saturday",
     "venue": "Day",
     "artists": [
-      {"time": "13:00", "location": "SonarVillage", "type": "Live", "from": "ES", "name": "PAUK", "genre": "Electronic", "comment": "Sounds very much like Wisp. Glitchy, Bassy, love it (Need to get up early for this)"},
-      {"time": "14:00", "location": "SonarVillage", "type": "Live", "from": "ES", "name": "FIRA FEM", "genre": "Electro dance pop", "comment": "yeah whatever"},
-      {"time": "14:45", "location": "SonarVillage", "type": "Live", "from": "ES", "name": "TELMO TRENOR", "genre": "Electro/Synth", "comment": "Laid back electronic & synth to bring in Saturday"},
-      {"time": "15:50", "location": "SonarVillage", "type": "Live", "from": "UK", "name": "JOE GODDARD", "genre": "Electric Pop/House", "comment": "Great arps. Way better than some of the other Synthpopers"},
-      {"time": "16:50", "location": "SonarVillage", "type": "DJ", "from": "MX", "name": "ZUTZUT & IMAABS", "genre": "Latin Electro Bass", "comment": "Tough one to call as material is non-existent"},
-      {"time": "18:00", "location": "SonarVillage", "type": "Live", "from": "UK", "name": "NADIA ROSE", "genre": "?", "comment": "?"},
-      {"time": "18:35", "location": "SonarVillage", "type": "DJ", "from": "US", "name": "SOULECTION presents JOE KAY + JARREAU VANDAL", "genre": "Elevator music", "comment": "Shallow vocals oh and a few beats"},
-      {"time": "20:10", "location": "SonarVillage", "type": "Live", "from": "CA", "name": "KEYS N KRATES", "genre": "Trap/EDM", "comment": "Well put together electro dance with some fat bass and filters"},
-      {"time": "21:15", "location": "SonarVillage", "type": "DJ", "from": "UK", "name": "OPTIMO", "genre": "Funk/Techno/Dub/Electro/House", "comment": "Lots of bongos but probably something for everyone"},
-      {"time": "13:00", "location": "SonarDôme", "type": "Live", "from": "ES", "name": "GHOSTLY ENEMIES", "genre": "Dark Synth Trip Pop", "comment": "Good voice. Crazy Genre bending stuff. Liking it"},
-      {"time": "13:45", "location": "SonarDôme", "type": "Live", "from": "ES", "name": "HUMA", "genre": "Noise/Soundscape", "comment": "Bit more structure and interest than Aethereal. Worth checking out"},
-      {"time": "14:30", "location": "SonarDôme", "type": "Live", "from": "JP", "name": "CRYSTAL / SPARROWS", "genre": "Japanese Electro synth pop", "comment": "Interesting boarders on cheesy but might just get away with it"},
-      {"time": "15:20", "location": "SonarDôme", "type": "Live", "from": "US", "name": "MATMOS", "genre": "Abstract/Narration", "comment": "Narration, washing machines and Björk. No doubt it's weird"},
-      {"time": "16:10", "location": "SonarDôme", "type": "DJ", "from": "US", "name": "VERONICA VASICKA", "genre": "Minimal Wave", "comment": "I'm in a computer game!"},
-      {"time": "17:15", "location": "SonarDôme", "type": "Live", "from": "ES", "name": "C. TANGANA", "genre": "Spanish/Rap/Pop", "comment": "Not my thing but shows promise"},
-      {"time": "18:20", "location": "SonarDôme", "type": "Live", "from": "US", "name": "SUICIDEYEAR", "genre": "Rap - Lots of angry bad words with some spacey soundscapes", "comment": "bit annoying"},
-      {"time": "19:35", "location": "SonarDôme", "type": "Live", "from": "US", "name": "THUNDERCAT", "genre": "Drawing similarities with Jamiroquai again", "comment": "not for me"},
-      {"time": "20:45", "location": "SonarDôme", "type": "DJ", "from": "US", "name": "STAR EYES B2B JUBILEE", "genre": "House/Techno + Grime/HH/Bass", "comment": "If you wanna move check these two out"},
-      {"time": "14:30", "location": "SonarHall", "type": "Live", "from": "ES", "name": "ANÍMIC", "genre": "Dark Synth", "comment": "More intelligent than some of the Electropop here. Could be good on big speakers."},
-      {"time": "16:30", "location": "SonarHall", "type": "Live", "from": "UK", "name": "GAIKA", "genre": "Grime/HH/Dance", "comment": "Some interesting material here"},
-      {"time": "18:30", "location": "SonarHall", "type": "Live", "from": "US / JP", "name": "NOSAJ THING + DAITO MANABE", "genre": "Abstract Electro", "comment": "With some funky visuals, check it out"},
-      {"time": "20:30", "location": "SonarHall", "type": "Live", "from": "UK", "name": "SOHN", "genre": "Electropop", "comment": "Warm, powerful electronic with slightly vocoded vocals"},
-      {"time": "14:00", "location": "SonarComplex", "type": "Live", "from": "ES", "name": "CONNECTOME", "genre": "Contempory", "comment": "Piano, Strings, electronic and vocals by Sheldon obviously"},
-      {"time": "16:00", "location": "SonarComplex", "type": "Live", "from": "IS", "name": "VALGEIR SIGURDSSON", "genre": "Glitchy folk", "comment": "Doesn't really go anywhere"},
-      {"time": "18:00", "location": "SonarComplex", "type": "Live", "from": "US", "name": "NICO MUHLY", "genre": "Classical", "comment": "Something for the more discerning listener"},
-      {"time": "20:00", "location": "SonarComplex", "type": "Live", "from": "UK", "name": "AMNESIA SCANNER", "genre": "Electro Base", "comment": "Closer to music than the guy above. Do not miss!"},
-      {"time": "16:00", "location": "SonarXS", "type": "Live", "from": "ES", "name": "OBLIQUE & CARLOS BAYONA", "genre": "Synth Pop", "comment": "The 80s will not die"},
-      {"time": "16:45", "location": "SonarXS", "type": "DJ", "from": "ES", "name": "AETHEREAL ARTHROPOD", "genre": "Noise", "comment": "Even I am having trouble classifying this as music but I might check it out to be sure"},
-      {"time": "17:50", "location": "SonarXS", "type": "Live", "from": "ES", "name": "BEJO", "genre": "Rap", "comment": "'Mucho Chicken in the kitchen'. Need I say more."},
-      {"time": "18:35", "location": "SonarXS", "type": "DJ", "from": "TN", "name": "DEENA ABDELWAHED", "genre": "Experimental Bass", "comment": "This is what I'd imagined the XS room would be about. Sounds good"},
-      {"time": "19:40", "location": "SonarXS", "type": "Live", "from": "ES", "name": "DELLAFUENTE Y MAKA", "genre": "Flamenco Rap", "comment": "Couldn't find much on this group other than it's some kind of flamenco Rap"},
-      {"time": "20:30", "location": "SonarXS", "type": "DJ", "from": "US", "name": "TOTAL FREEDOM", "genre": "Heavy Dance", "comment": "Might take some time to get going but could be good"}
+      {
+        "time": "13:00",
+        "location": "SonarVillage",
+        "type": "Live",
+        "from": "ES",
+        "name": "Pauk",
+        "genre": "Electronic",
+        "comment": "Sounds very much like Wisp. Glitchy, Bassy, love it (Need to get up early for this)."
+      },
+      {
+        "time": "14:00",
+        "location": "SonarVillage",
+        "type": "Live",
+        "from": "ES",
+        "name": "Fira Fem",
+        "genre": "Electro dance pop",
+        "comment": "yeah whatever."
+      },
+      {
+        "time": "14:45",
+        "location": "SonarVillage",
+        "type": "Live",
+        "from": "ES",
+        "name": "Telmo Trenor",
+        "genre": "Electro/Synth",
+        "comment": "Laid back electronic & synth to bring in Saturday."
+      },
+      {
+        "time": "15:50",
+        "location": "SonarVillage",
+        "type": "Live",
+        "from": "UK",
+        "name": "Joe Goddard",
+        "genre": "Electric Pop/House",
+        "comment": "Great arps. Way better than some of the other Synthpopers."
+      },
+      {
+        "time": "16:50",
+        "location": "SonarVillage",
+        "type": "DJ",
+        "from": "MX",
+        "name": "Zutzut & Imaabs",
+        "genre": "Latin Electro Bass",
+        "comment": "Tough one to call as material is non-existent."
+      },
+      {
+        "time": "18:00",
+        "location": "SonarVillage",
+        "type": "Live",
+        "from": "UK",
+        "name": "Nadia Rose",
+        "genre": "HipHop",
+        "comment": "Good if you like that sort of thing."
+      },
+      {
+        "time": "18:35",
+        "location": "SonarVillage",
+        "type": "DJ",
+        "from": "US",
+        "name": "Soulection Presents Joe Kay + Jarreau Vandal",
+        "genre": "Elevator music",
+        "comment": "Shallow vocals oh and a few beats."
+      },
+      {
+        "time": "20:10",
+        "location": "SonarVillage",
+        "type": "Live",
+        "from": "CA",
+        "name": "Keys N Krates",
+        "genre": "Trap/EDM",
+        "comment": "Well put together electro dance with some fat bass and filters."
+      },
+      {
+        "time": "21:15",
+        "location": "SonarVillage",
+        "type": "DJ",
+        "from": "UK",
+        "name": "Optimo",
+        "genre": "Funk/Techno/Dub/Electro/House",
+        "comment": "Lots of bongos but probably something for everyone."
+      },
+      {
+        "time": "13:00",
+        "location": "SonarDôme",
+        "type": "Live",
+        "from": "ES",
+        "name": "Ghostly Enemies",
+        "genre": "Dark Synth Trip Pop",
+        "comment": "Good voice. Crazy Genre bending stuff. Liking it."
+      },
+      {
+        "time": "13:45",
+        "location": "SonarDôme",
+        "type": "Live",
+        "from": "ES",
+        "name": "Huma",
+        "genre": "Noise/Soundscape",
+        "comment": "Bit more structure and interest than Aethereal. Worth checking out."
+      },
+      {
+        "time": "14:30",
+        "location": "SonarDôme",
+        "type": "Live",
+        "from": "JP",
+        "name": "Crystal / Sparrows",
+        "genre": "Japanese Electro synth pop",
+        "comment": "Interesting boarders on cheesy but might just get away with it."
+      },
+      {
+        "time": "15:20",
+        "location": "SonarDôme",
+        "type": "Live",
+        "from": "US",
+        "name": "Matmos",
+        "genre": "Abstract/Narration",
+        "comment": "Narration, washing machines and Björk. No doubt it's weird."
+      },
+      {
+        "time": "16:10",
+        "location": "SonarDôme",
+        "type": "DJ",
+        "from": "US",
+        "name": "Veronica Vasicka",
+        "genre": "Minimal Wave",
+        "comment": "I'm in a computer game!."
+      },
+      {
+        "time": "17:15",
+        "location": "SonarDôme",
+        "type": "Live",
+        "from": "ES",
+        "name": "C. Tangana",
+        "genre": "Spanish/Rap/Pop",
+        "comment": "Not my thing but shows promise."
+      },
+      {
+        "time": "18:20",
+        "location": "SonarDôme",
+        "type": "Live",
+        "from": "US",
+        "name": "Suicideyear",
+        "genre": "Rap - Lots of angry bad words with some spacey soundscapes",
+        "comment": "bit annoying."
+      },
+      {
+        "time": "19:35",
+        "location": "SonarDôme",
+        "type": "Live",
+        "from": "US",
+        "name": "Thundercat",
+        "genre": "Drawing similarities with Jamiroquai again",
+        "comment": "not for me."
+      },
+      {
+        "time": "20:45",
+        "location": "SonarDôme",
+        "type": "DJ",
+        "from": "US",
+        "name": "Star Eyes B2 B Jubilee",
+        "genre": "House/Techno + Grime/HH/Bass",
+        "comment": "If you wanna move check these two out."
+      },
+      {
+        "time": "14:30",
+        "location": "SonarHall",
+        "type": "Live",
+        "from": "ES",
+        "name": "Anímic",
+        "genre": "Dark Synth",
+        "comment": "More intelligent than some of the Electropop here. Could be good on big speakers."
+      },
+      {
+        "time": "16:30",
+        "location": "SonarHall",
+        "type": "Live",
+        "from": "UK",
+        "name": "Gaika",
+        "genre": "Grime/HH/Dance",
+        "comment": "Some interesting material here."
+      },
+      {
+        "time": "18:30",
+        "location": "SonarHall",
+        "type": "Live",
+        "from": "US / JP",
+        "name": "Nosaj Thing + Daito Manabe",
+        "genre": "Abstract Electro",
+        "comment": "With some funky visuals, check it out."
+      },
+      {
+        "time": "20:30",
+        "location": "SonarHall",
+        "type": "Live",
+        "from": "UK",
+        "name": "Sohn",
+        "genre": "Electropop",
+        "comment": "Warm, powerful electronic with slightly vocoded vocals."
+      },
+      {
+        "time": "14:00",
+        "location": "SonarComplex",
+        "type": "Live",
+        "from": "ES",
+        "name": "Connectome",
+        "genre": "Contempory",
+        "comment": "Piano, Strings, electronic and vocals by Sheldon obviously."
+      },
+      {
+        "time": "16:00",
+        "location": "SonarComplex",
+        "type": "Live",
+        "from": "IS",
+        "name": "Valgeir Sigurdsson",
+        "genre": "Glitchy folk",
+        "comment": "Doesn't really go anywhere."
+      },
+      {
+        "time": "18:00",
+        "location": "SonarComplex",
+        "type": "Live",
+        "from": "US",
+        "name": "Nico Muhly",
+        "genre": "Classical",
+        "comment": "Something for the more discerning listener."
+      },
+      {
+        "time": "20:00",
+        "location": "SonarComplex",
+        "type": "Live",
+        "from": "UK",
+        "name": "Amnesia Scanner",
+        "genre": "Electro Base",
+        "comment": "Closer to music than the guy above. Do not miss!."
+      },
+      {
+        "time": "16:00",
+        "location": "SonarXS",
+        "type": "Live",
+        "from": "ES",
+        "name": "Oblique & Carlos Bayona",
+        "genre": "Synth Pop",
+        "comment": "The 80s will not die."
+      },
+      {
+        "time": "16:45",
+        "location": "SonarXS",
+        "type": "DJ",
+        "from": "ES",
+        "name": "Aethereal Arthropod",
+        "genre": "Noise",
+        "comment": "Even I am having trouble classifying this as music but I might check it out to be sure."
+      },
+      {
+        "time": "17:50",
+        "location": "SonarXS",
+        "type": "Live",
+        "from": "ES",
+        "name": "Bejo",
+        "genre": "Rap",
+        "comment": "'Mucho Chicken in the kitchen'. Need I say more."
+      },
+      {
+        "time": "18:35",
+        "location": "SonarXS",
+        "type": "DJ",
+        "from": "TN",
+        "name": "Deena Abdelwahed",
+        "genre": "Experimental Bass",
+        "comment": "This is what I'd imagined the XS room would be about. Sounds good."
+      },
+      {
+        "time": "19:40",
+        "location": "SonarXS",
+        "type": "Live",
+        "from": "ES",
+        "name": "Dellafuente Y Maka",
+        "genre": "Flamenco Rap",
+        "comment": "Couldn't find much on this group other than it's some kind of flamenco Rap."
+      },
+      {
+        "time": "20:30",
+        "location": "SonarXS",
+        "type": "DJ",
+        "from": "US",
+        "name": "Total Freedom",
+        "genre": "Heavy Dance",
+        "comment": "Might take some time to get going but could be good."
+      }
     ]
   },
   {
@@ -154,28 +1090,204 @@
     "day": "Saturday",
     "venue": "Night",
     "artists": [
-      {"time": "21:30", "location": "SonarClub", "type": "DJ", "from": "ES", "name": "FRAN LENAERS", "genre": "Electro/Pop/Guitars", "comment": "The Enya vs Kraftwerk mashup is genius"},
-      {"time": "22:45", "location": "SonarClub", "type": "DJ", "from": "FR", "name": "CERRONE", "genre": "Disco", "comment": "Hopefully we'll be too late for this"},
-      {"time": "23:50", "location": "SonarClub", "type": "DJ", "from": "FR", "name": "CLARA 3000", "genre": "Industrial Electro", "comment": "Didn't really grab me but might work on large speakers"},
-      {"time": "01:15", "location": "SonarClub", "type": "Live", "from": "FR", "name": "JUSTICE", "genre": "Disco", "comment": "Layered funky sounds, sure to please many"},
-      {"time": "02:35", "location": "SonarClub", "type": "DJ", "from": "CA", "name": "HEIDI", "genre": "Dance/House", "comment": "She did a banging set for her birthday. I expect this to be as entertaining"},
-      {"time": "04:00", "location": "SonarClub", "type": "DJ", "from": "SE", "name": "ERIC PRYDZ", "genre": "Dance", "comment": "Solid beats. I'll probably be after something a little harder but this is a good go to"},
-      {"time": "05:35", "location": "SonarClub", "type": "DJ", "from": "IT", "name": "MARCO CAROLA", "genre": "Minimal", "comment": "Drones on a bit but you won't care if you're still around"},
-      {"time": "22:00", "location": "SonarPub", "type": "DJ", "from": "ES", "name": "FUEGO SQUAD", "genre": "Electro Pop", "comment": "Probably too early to care but sound pretty smooth."},
-      {"time": "23:00", "location": "SonarPub", "type": "Live", "from": "NZ", "name": "FAT FREDDY’S DROP", "genre": "Dub/Funk/electro", "comment": "Will be interesting to see if they vary this appearance from the Day show"},
-      {"time": "00:20", "location": "SonarPub", "type": "DJ", "from": "US", "name": "NICK HOOK", "genre": "Rap", "comment": "A filler between FFD and De La Soul"},
-      {"time": "01:25", "location": "SonarPub", "type": "Live", "from": "US", "name": "DE LA SOUL", "genre": "Funk/Rap", "comment": "Need no introduction. If this is your thing then these guys have been going for years."},
-      {"time": "02:30", "location": "SonarPub", "type": "DJ", "from": "US / DK", "name": "AVALON EMERSON & COURTESY", "genre": "Cosmic to Moody Techno", "comment": "You won't be disappointed"},
-      {"time": "04:00", "location": "SonarPub", "type": "Live", "from": "FR", "name": "VITALIC - ODC LIVE", "genre": "Disco Techno", "comment": "Might just the ticket at 4am"},
-      {"time": "05:05", "location": "SonarPub", "type": "DJ", "from": "US", "name": "THE BLACK MADONNA", "genre": "Dance", "comment": "Saw last year at Day. Absolutely banging!"},
-      {"time": "21:30", "location": "SonarLab", "type": "DJ", "from": "ES", "name": "YLIA", "genre": "Electro", "comment": "Nice, rich sounds. Too early for some though"},
-      {"time": "22:30", "location": "SonarLab", "type": "Live", "from": "UK", "name": "OVERMONO", "genre": "Abstract Techno", "comment": "Gets there eventually. Might be worth a visit"},
-      {"time": "23:30", "location": "SonarLab", "type": "Live", "from": "US", "name": "CARL CRAIG presents VERSUS SYNTHESIZER ENSEMBLE", "genre": "Techno Symphony", "comment": "Real instruments! Anticipation. Could be quite good"},
-      {"time": "00:40", "location": "SonarLab", "type": "DJ", "from": "UK", "name": "T Q D (ROYAL T, DJ Q & FLAVA D)", "genre": "Garage/Bass", "comment": "Might be interesting what they do at Lab"},
-      {"time": "01:45", "location": "SonarLab", "type": "DJ", "from": "US", "name": "BEAUTIFUL SWIMMERS", "genre": "Experimental Techno", "comment": "Apt for Lab but not as out there as some"},
-      {"time": "03:05", "location": "SonarLab", "type": "DJ", "from": "DE", "name": "MARCEL DETTMANN & DR RUBINSTEIN", "genre": "Minimal Techno", "comment": "Tamer Lab but some nice builds and steady rhythm should keep you going"},
-      {"time": "05:05", "location": "SonarLab", "type": "DJ", "from": "CA / KR", "name": "DAPHNI & HUNEE", "genre": "Dance/Funk", "comment": "Wasn't impressed last I saw Daphni. Recent material sounds good though and with Hunee should be much better"},
-      {"time": "00:00", "location": "SonarCar", "type": "DJ", "from": "US / CA", "name": "SETH TROXLER & TIGA", "genre": "Marathon set between these", "comment": "You can expect a range of genres, and a queue to get in"}
+      {
+        "time": "21:30",
+        "location": "SonarClub",
+        "type": "DJ",
+        "from": "ES",
+        "name": "Fran Lenaers",
+        "genre": "Electro/Pop/Guitars",
+        "comment": "The Enya vs Kraftwerk mashup is genius."
+      },
+      {
+        "time": "22:45",
+        "location": "SonarClub",
+        "type": "DJ",
+        "from": "FR",
+        "name": "Cerrone",
+        "genre": "Disco",
+        "comment": "Hopefully we'll be too late for this."
+      },
+      {
+        "time": "23:50",
+        "location": "SonarClub",
+        "type": "DJ",
+        "from": "FR",
+        "name": "Clara 3000",
+        "genre": "Industrial Electro",
+        "comment": "Didn't really grab me but might work on large speakers."
+      },
+      {
+        "time": "01:15",
+        "location": "SonarClub",
+        "type": "Live",
+        "from": "FR",
+        "name": "Justice",
+        "genre": "Disco",
+        "comment": "Layered funky sounds, sure to please many."
+      },
+      {
+        "time": "02:35",
+        "location": "SonarClub",
+        "type": "DJ",
+        "from": "CA",
+        "name": "Heidi",
+        "genre": "Dance/House",
+        "comment": "She did a banging set for her birthday. I expect this to be as entertaining."
+      },
+      {
+        "time": "04:00",
+        "location": "SonarClub",
+        "type": "DJ",
+        "from": "SE",
+        "name": "Eric Prydz",
+        "genre": "Dance",
+        "comment": "Solid beats. I'll probably be after something a little harder but this is a good go to."
+      },
+      {
+        "time": "05:35",
+        "location": "SonarClub",
+        "type": "DJ",
+        "from": "IT",
+        "name": "Marco Carola",
+        "genre": "Minimal",
+        "comment": "Drones on a bit but you won't care if you're still around."
+      },
+      {
+        "time": "22:00",
+        "location": "SonarPub",
+        "type": "DJ",
+        "from": "ES",
+        "name": "Fuego Squad",
+        "genre": "Electro Pop",
+        "comment": "Probably too early to care but sound pretty smooth."
+      },
+      {
+        "time": "23:00",
+        "location": "SonarPub",
+        "type": "Live",
+        "from": "NZ",
+        "name": "Fat Freddy’s Drop",
+        "genre": "Dub/Funk/electro",
+        "comment": "Will be interesting to see if they vary this appearance from the Day show."
+      },
+      {
+        "time": "00:20",
+        "location": "SonarPub",
+        "type": "DJ",
+        "from": "US",
+        "name": "Nick Hook",
+        "genre": "Rap",
+        "comment": "A filler between FFD and De La Soul."
+      },
+      {
+        "time": "01:25",
+        "location": "SonarPub",
+        "type": "Live",
+        "from": "US",
+        "name": "De La Soul",
+        "genre": "Funk/Rap",
+        "comment": "Need no introduction. If this is your thing then these guys have been going for years."
+      },
+      {
+        "time": "02:30",
+        "location": "SonarPub",
+        "type": "DJ",
+        "from": "US / DK",
+        "name": "Avalon Emerson & Courtesy",
+        "genre": "Cosmic to Moody Techno",
+        "comment": "You won't be disappointed."
+      },
+      {
+        "time": "04:00",
+        "location": "SonarPub",
+        "type": "Live",
+        "from": "FR",
+        "name": "Vitalic   Odc Live",
+        "genre": "Disco Techno",
+        "comment": "Might just the ticket at 4am."
+      },
+      {
+        "time": "05:05",
+        "location": "SonarPub",
+        "type": "DJ",
+        "from": "US",
+        "name": "The Black Madonna",
+        "genre": "Dance",
+        "comment": "Saw last year at Day. Absolutely banging!."
+      },
+      {
+        "time": "21:30",
+        "location": "SonarLab",
+        "type": "DJ",
+        "from": "ES",
+        "name": "Ylia",
+        "genre": "Electro",
+        "comment": "Nice, rich sounds. Too early for some though."
+      },
+      {
+        "time": "22:30",
+        "location": "SonarLab",
+        "type": "Live",
+        "from": "UK",
+        "name": "Overmono",
+        "genre": "Abstract Techno",
+        "comment": "Gets there eventually. Might be worth a visit."
+      },
+      {
+        "time": "23:30",
+        "location": "SonarLab",
+        "type": "Live",
+        "from": "US",
+        "name": "Carl Craig Presents Versus Synthesizer Ensemble",
+        "genre": "Techno Symphony",
+        "comment": "Real instruments! Anticipation. Could be quite good."
+      },
+      {
+        "time": "00:40",
+        "location": "SonarLab",
+        "type": "DJ",
+        "from": "UK",
+        "name": "T Q D (Royal T, Dj Q & Flava D)",
+        "genre": "Garage/Bass",
+        "comment": "Might be interesting what they do at Lab."
+      },
+      {
+        "time": "01:45",
+        "location": "SonarLab",
+        "type": "DJ",
+        "from": "US",
+        "name": "Beautiful Swimmers",
+        "genre": "Experimental Techno",
+        "comment": "Apt for Lab but not as out there as some."
+      },
+      {
+        "time": "03:05",
+        "location": "SonarLab",
+        "type": "DJ",
+        "from": "DE",
+        "name": "Marcel Dettmann & Dr Rubinstein",
+        "genre": "Minimal Techno",
+        "comment": "Tamer Lab but some nice builds and steady rhythm should keep you going."
+      },
+      {
+        "time": "05:05",
+        "location": "SonarLab",
+        "type": "DJ",
+        "from": "CA / KR",
+        "name": "Daphni & Hunee",
+        "genre": "Dance/Funk",
+        "comment": "Wasn't impressed last I saw Daphni. Recent material sounds good though and with Hunee should be much better."
+      },
+      {
+        "time": "00:00",
+        "location": "SonarCar",
+        "type": "DJ",
+        "from": "US / CA",
+        "name": "Seth Troxler & Tiga",
+        "genre": "Marathon set between these",
+        "comment": "You can expect a range of genres, and a queue to get in."
+      }
     ]
   }
 ]
